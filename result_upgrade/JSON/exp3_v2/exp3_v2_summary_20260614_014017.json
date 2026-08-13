@@ -1,0 +1,68 @@
+{
+  "timestamp": "20260614_014017",
+  "version": {
+    "timestamp": "2026-06-14T01:40:17.934707",
+    "pytorch_version": "2.5.1",
+    "cuda_available": false
+  },
+  "best_target": {
+    "config": "Medium Model (512, no freeze)",
+    "source_test": 7.5,
+    "target_test": 70.0
+  },
+  "best_balance": {
+    "config": "Medium Model (512, no freeze)",
+    "source_test": 7.5,
+    "target_test": 70.0
+  },
+  "all_configs": [
+    {
+      "name": "Baseline (384, no freeze)",
+      "source_test": 10.0,
+      "target_test": 65.0,
+      "balance_score": 65.0
+    },
+    {
+      "name": "Freeze Backbone (384)",
+      "source_test": 10.0,
+      "target_test": 37.5,
+      "balance_score": 37.5
+    },
+    {
+      "name": "Low FT LR (384, lr=1e-5)",
+      "source_test": 17.5,
+      "target_test": 32.5,
+      "balance_score": 32.5
+    },
+    {
+      "name": "Partial Freeze + Low LR (384)",
+      "source_test": 20.0,
+      "target_test": 35.0,
+      "balance_score": 35.0
+    },
+    {
+      "name": "Medium Model (512, no freeze)",
+      "source_test": 7.5,
+      "target_test": 70.0,
+      "balance_score": 70.0
+    },
+    {
+      "name": "Medium Model + Freeze Backbone (512)",
+      "source_test": 22.5,
+      "target_test": 40.0,
+      "balance_score": 40.0
+    },
+    {
+      "name": "Medium Model + Low Dropout (512)",
+      "source_test": 10.0,
+      "target_test": 42.5,
+      "balance_score": 42.5
+    },
+    {
+      "name": "Large Model (768, partial freeze)",
+      "source_test": 2.5,
+      "target_test": 62.5,
+      "balance_score": 62.5
+    }
+  ]
+}

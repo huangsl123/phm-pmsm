@@ -1,0 +1,160 @@
+{
+  "version": {
+    "timestamp": "2026-06-18T01:31:02.202532",
+    "pytorch_version": "2.5.1",
+    "cuda_available": false
+  },
+  "timestamp": "20260618_013102",
+  "all_results": [
+    {
+      "config_name": "Distill (T=1.8, alpha=0.3)",
+      "config_hash": "d3a45a7c",
+      "config": {
+        "embed_dim": 384,
+        "num_heads": 4,
+        "num_layers": 2,
+        "dropout": 0.1,
+        "lr": 0.0001,
+        "weight_decay": 0.0005,
+        "batch_size": 32
+      },
+      "method": "distill",
+      "source": {
+        "train_acc": 92.26519337016575,
+        "val_acc": 91.02564102564102,
+        "test_acc": 90.38461538461539
+      },
+      "target": {
+        "train_acc_before": 3.874538745387454,
+        "val_acc_before": 5.128205128205129,
+        "test_acc_before": 5.128205128205129,
+        "train_acc": 98.70848708487085,
+        "val_acc": 92.3076923076923,
+        "test_acc": 86.53846153846153,
+        "improvement": 81.41025641025641
+      },
+      "balance_score": 96.53846153846153,
+      "temperature": 1.8,
+      "distill_alpha": 0.3,
+      "mix_source_ratio": 0.3
+    },
+    {
+      "config_name": "Distill (T=1.5, alpha=0.25)",
+      "config_hash": "840f0933",
+      "config": {
+        "embed_dim": 384,
+        "num_heads": 4,
+        "num_layers": 2,
+        "dropout": 0.1,
+        "lr": 0.0001,
+        "weight_decay": 0.0005,
+        "batch_size": 32
+      },
+      "method": "distill",
+      "source": {
+        "train_acc": 95.94843462246777,
+        "val_acc": 92.3076923076923,
+        "test_acc": 94.23076923076923
+      },
+      "target": {
+        "train_acc_before": 3.874538745387454,
+        "val_acc_before": 5.128205128205129,
+        "test_acc_before": 5.128205128205129,
+        "train_acc": 99.2619926199262,
+        "val_acc": 92.3076923076923,
+        "test_acc": 87.17948717948718,
+        "improvement": 82.05128205128206
+      },
+      "balance_score": 97.17948717948718,
+      "temperature": 1.5,
+      "distill_alpha": 0.25,
+      "mix_source_ratio": 0.3
+    }
+  ],
+  "best_target_acc": {
+    "config_name": "Distill (T=1.5, alpha=0.25)",
+    "config_hash": "840f0933",
+    "config": {
+      "embed_dim": 384,
+      "num_heads": 4,
+      "num_layers": 2,
+      "dropout": 0.1,
+      "lr": 0.0001,
+      "weight_decay": 0.0005,
+      "batch_size": 32
+    },
+    "method": "distill",
+    "source": {
+      "train_acc": 95.94843462246777,
+      "val_acc": 92.3076923076923,
+      "test_acc": 94.23076923076923
+    },
+    "target": {
+      "train_acc_before": 3.874538745387454,
+      "val_acc_before": 5.128205128205129,
+      "test_acc_before": 5.128205128205129,
+      "train_acc": 99.2619926199262,
+      "val_acc": 92.3076923076923,
+      "test_acc": 87.17948717948718,
+      "improvement": 82.05128205128206
+    },
+    "balance_score": 97.17948717948718,
+    "temperature": 1.5,
+    "distill_alpha": 0.25,
+    "mix_source_ratio": 0.3
+  },
+  "best_balance": {
+    "config_name": "Distill (T=1.5, alpha=0.25)",
+    "result": {
+      "config_name": "Distill (T=1.5, alpha=0.25)",
+      "config_hash": "840f0933",
+      "config": {
+        "embed_dim": 384,
+        "num_heads": 4,
+        "num_layers": 2,
+        "dropout": 0.1,
+        "lr": 0.0001,
+        "weight_decay": 0.0005,
+        "batch_size": 32
+      },
+      "method": "distill",
+      "source": {
+        "train_acc": 95.94843462246777,
+        "val_acc": 92.3076923076923,
+        "test_acc": 94.23076923076923
+      },
+      "target": {
+        "train_acc_before": 3.874538745387454,
+        "val_acc_before": 5.128205128205129,
+        "test_acc_before": 5.128205128205129,
+        "train_acc": 99.2619926199262,
+        "val_acc": 92.3076923076923,
+        "test_acc": 87.17948717948718,
+        "improvement": 82.05128205128206
+      },
+      "balance_score": 97.17948717948718,
+      "temperature": 1.5,
+      "distill_alpha": 0.25,
+      "mix_source_ratio": 0.3
+    }
+  },
+  "v3_comparison": {
+    "v3_best_distill": {
+      "source_test": 77.5,
+      "target_test": 65.0,
+      "balance_score": 75.0
+    },
+    "v3_best_baseline": {
+      "source_test": 17.5,
+      "target_test": 77.5,
+      "balance_score": 77.5
+    }
+  },
+  "new_methods": [
+    "DANN (Domain Adversarial Neural Networks)",
+    "MMD (Maximum Mean Discrepancy)",
+    "Pseudo Label (Self-Training)",
+    "Distill+Pseudo (Combined Strategy)",
+    "Fine-tuned Distillation (T=1.5-2.5, alpha=0.25-0.4)"
+  ]
+}

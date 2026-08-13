@@ -1,0 +1,34 @@
+{
+  "timestamp": "20260618_013102",
+  "version": {
+    "timestamp": "2026-06-18T01:31:02.202532",
+    "pytorch_version": "2.5.1",
+    "cuda_available": false
+  },
+  "best_target": {
+    "config": "Distill (T=1.5, alpha=0.25)",
+    "source_test": 94.23076923076923,
+    "target_test": 87.17948717948718
+  },
+  "best_balance": {
+    "config": "Distill (T=1.5, alpha=0.25)",
+    "source_test": 94.23076923076923,
+    "target_test": 87.17948717948718
+  },
+  "all_configs": [
+    {
+      "name": "Distill (T=1.8, alpha=0.3)",
+      "method": "distill",
+      "source_test": 90.38461538461539,
+      "target_test": 86.53846153846153,
+      "balance_score": 96.53846153846153
+    },
+    {
+      "name": "Distill (T=1.5, alpha=0.25)",
+      "method": "distill",
+      "source_test": 94.23076923076923,
+      "target_test": 87.17948717948718,
+      "balance_score": 97.17948717948718
+    }
+  ]
+}

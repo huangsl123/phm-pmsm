@@ -1,0 +1,179 @@
+{
+  "all_results": [
+    {
+      "config_name": "Baseline (embed_dim=384)",
+      "config": {
+        "embed_dim": 384,
+        "num_heads": 4,
+        "num_layers": 2,
+        "dropout": 0.1,
+        "lr": 0.0001,
+        "weight_decay": 0.0005,
+        "batch_size": 32
+      },
+      "ft_lr": 0.0001,
+      "freeze": false,
+      "source": {
+        "train_acc": 9.880239520958083,
+        "val_acc": 10.0,
+        "test_acc": 7.5
+      },
+      "target": {
+        "train_acc_before": 4.491017964071856,
+        "val_acc_before": 0.0,
+        "test_acc_before": 5.0,
+        "train_acc": 66.46706586826348,
+        "val_acc": 45.0,
+        "test_acc": 37.5,
+        "improvement": 32.5
+      },
+      "vs_exp2": 28.3
+    },
+    {
+      "config_name": "Larger Model (embed_dim=512)",
+      "config": {
+        "embed_dim": 512,
+        "num_heads": 8,
+        "num_layers": 3,
+        "dropout": 0.1,
+        "lr": 0.0001,
+        "weight_decay": 0.0005,
+        "batch_size": 32
+      },
+      "ft_lr": 0.0001,
+      "freeze": false,
+      "source": {
+        "train_acc": 8.982035928143713,
+        "val_acc": 10.0,
+        "test_acc": 10.0
+      },
+      "target": {
+        "train_acc_before": 4.191616766467066,
+        "val_acc_before": 5.0,
+        "test_acc_before": 5.0,
+        "train_acc": 100.0,
+        "val_acc": 75.0,
+        "test_acc": 77.5,
+        "improvement": 72.5
+      },
+      "vs_exp2": 68.3
+    },
+    {
+      "config_name": "Larger Model + Lower Dropout",
+      "config": {
+        "embed_dim": 512,
+        "num_heads": 8,
+        "num_layers": 3,
+        "dropout": 0.05,
+        "lr": 0.0001,
+        "weight_decay": 0.0001,
+        "batch_size": 32
+      },
+      "ft_lr": 0.0001,
+      "freeze": false,
+      "source": {
+        "train_acc": 10.778443113772456,
+        "val_acc": 5.0,
+        "test_acc": 10.0
+      },
+      "target": {
+        "train_acc_before": 4.191616766467066,
+        "val_acc_before": 5.0,
+        "test_acc_before": 7.5,
+        "train_acc": 100.0,
+        "val_acc": 75.0,
+        "test_acc": 70.0,
+        "improvement": 62.5
+      },
+      "vs_exp2": 60.8
+    },
+    {
+      "config_name": "Larger Model + Higher FT LR",
+      "config": {
+        "embed_dim": 512,
+        "num_heads": 8,
+        "num_layers": 3,
+        "dropout": 0.1,
+        "lr": 0.0001,
+        "weight_decay": 0.0005,
+        "batch_size": 32
+      },
+      "ft_lr": 0.0005,
+      "freeze": false,
+      "source": {
+        "train_acc": 4.191616766467066,
+        "val_acc": 10.0,
+        "test_acc": 0.0
+      },
+      "target": {
+        "train_acc_before": 4.191616766467066,
+        "val_acc_before": 5.0,
+        "test_acc_before": 5.0,
+        "train_acc": 95.80838323353294,
+        "val_acc": 60.0,
+        "test_acc": 65.0,
+        "improvement": 60.0
+      },
+      "vs_exp2": 55.8
+    },
+    {
+      "config_name": "Largest Model (embed_dim=768)",
+      "config": {
+        "embed_dim": 768,
+        "num_heads": 12,
+        "num_layers": 4,
+        "dropout": 0.1,
+        "lr": 0.0001,
+        "weight_decay": 0.0005,
+        "batch_size": 16
+      },
+      "ft_lr": 0.0001,
+      "freeze": false,
+      "source": {
+        "train_acc": 9.281437125748504,
+        "val_acc": 5.0,
+        "test_acc": 5.0
+      },
+      "target": {
+        "train_acc_before": 3.592814371257485,
+        "val_acc_before": 0.0,
+        "test_acc_before": 10.0,
+        "train_acc": 95.50898203592814,
+        "val_acc": 55.0,
+        "test_acc": 60.0,
+        "improvement": 50.0
+      },
+      "vs_exp2": 50.8
+    }
+  ],
+  "best_result": {
+    "config_name": "Larger Model (embed_dim=512)",
+    "config": {
+      "embed_dim": 512,
+      "num_heads": 8,
+      "num_layers": 3,
+      "dropout": 0.1,
+      "lr": 0.0001,
+      "weight_decay": 0.0005,
+      "batch_size": 32
+    },
+    "ft_lr": 0.0001,
+    "freeze": false,
+    "source": {
+      "train_acc": 8.982035928143713,
+      "val_acc": 10.0,
+      "test_acc": 10.0
+    },
+    "target": {
+      "train_acc_before": 4.191616766467066,
+      "val_acc_before": 5.0,
+      "test_acc_before": 5.0,
+      "train_acc": 100.0,
+      "val_acc": 75.0,
+      "test_acc": 77.5,
+      "improvement": 72.5
+    },
+    "vs_exp2": 68.3
+  },
+  "timestamp": "2026-06-15T04:06:40.126530"
+}

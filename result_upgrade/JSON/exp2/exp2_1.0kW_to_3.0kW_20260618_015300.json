@@ -1,0 +1,30 @@
+{
+  "experiment": "EXP2: Cross-Domain (No Adaptation)",
+  "source_power": "1.0kW",
+  "target_power": "3.0kW",
+  "config": {
+    "window_size": 1024,
+    "stride": 128,
+    "embed_dim": 384,
+    "num_heads": 4,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "lr": 0.0001,
+    "weight_decay": 0.0005,
+    "batch_size": 32
+  },
+  "source_test_acc": 94.23076923076923,
+  "target_test_acc": 4.487179487179487,
+  "performance_drop": 89.74358974358974,
+  "source_samples": {
+    "train": 543,
+    "val": 78,
+    "test": 156
+  },
+  "target_samples": {
+    "train": 542,
+    "val": 78,
+    "test": 156
+  },
+  "timestamp": "2026-06-18T03:12:56.489264"
+}

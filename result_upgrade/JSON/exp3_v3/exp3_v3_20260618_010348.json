@@ -1,0 +1,144 @@
+{
+  "version": {
+    "timestamp": "2026-06-18T01:03:48.620758",
+    "pytorch_version": "2.5.1",
+    "cuda_available": false
+  },
+  "timestamp": "20260618_010348",
+  "all_results": [
+    {
+      "config_name": "V3-Baseline (384, no freeze)",
+      "config_hash": "74f9c60e",
+      "config": {
+        "embed_dim": 384,
+        "num_heads": 4,
+        "num_layers": 2,
+        "dropout": 0.1,
+        "lr": 0.0001,
+        "weight_decay": 0.0005,
+        "batch_size": 32
+      },
+      "method": "baseline",
+      "source": {
+        "train_acc": 7.918968692449355,
+        "val_acc": 7.6923076923076925,
+        "test_acc": 11.538461538461538
+      },
+      "target": {
+        "train_acc_before": 3.874538745387454,
+        "val_acc_before": 5.128205128205129,
+        "test_acc_before": 5.128205128205129,
+        "train_acc": 100.0,
+        "val_acc": 98.71794871794872,
+        "test_acc": 93.58974358974359,
+        "improvement": 88.46153846153847
+      },
+      "balance_score": 93.58974358974359
+    },
+    {
+      "config_name": "Distill+LWF (384, T=2, alpha=0.3)",
+      "config_hash": "4e6e73fa",
+      "config": {
+        "embed_dim": 384,
+        "num_heads": 4,
+        "num_layers": 2,
+        "dropout": 0.1,
+        "lr": 0.0001,
+        "weight_decay": 0.0005,
+        "batch_size": 32
+      },
+      "method": "distill",
+      "source": {
+        "train_acc": 93.92265193370166,
+        "val_acc": 89.74358974358974,
+        "test_acc": 91.02564102564102
+      },
+      "target": {
+        "train_acc_before": 3.874538745387454,
+        "val_acc_before": 5.128205128205129,
+        "test_acc_before": 5.128205128205129,
+        "train_acc": 99.44649446494465,
+        "val_acc": 94.87179487179488,
+        "test_acc": 89.1025641025641,
+        "improvement": 83.97435897435898
+      },
+      "balance_score": 99.1025641025641,
+      "temperature": 2.0,
+      "distill_alpha": 0.3,
+      "mix_source_ratio": 0.3
+    }
+  ],
+  "best_target_acc": {
+    "config_name": "V3-Baseline (384, no freeze)",
+    "config_hash": "74f9c60e",
+    "config": {
+      "embed_dim": 384,
+      "num_heads": 4,
+      "num_layers": 2,
+      "dropout": 0.1,
+      "lr": 0.0001,
+      "weight_decay": 0.0005,
+      "batch_size": 32
+    },
+    "method": "baseline",
+    "source": {
+      "train_acc": 7.918968692449355,
+      "val_acc": 7.6923076923076925,
+      "test_acc": 11.538461538461538
+    },
+    "target": {
+      "train_acc_before": 3.874538745387454,
+      "val_acc_before": 5.128205128205129,
+      "test_acc_before": 5.128205128205129,
+      "train_acc": 100.0,
+      "val_acc": 98.71794871794872,
+      "test_acc": 93.58974358974359,
+      "improvement": 88.46153846153847
+    },
+    "balance_score": 93.58974358974359
+  },
+  "best_balance": {
+    "config_name": "Distill+LWF (384, T=2, alpha=0.3)",
+    "result": {
+      "config_name": "Distill+LWF (384, T=2, alpha=0.3)",
+      "config_hash": "4e6e73fa",
+      "config": {
+        "embed_dim": 384,
+        "num_heads": 4,
+        "num_layers": 2,
+        "dropout": 0.1,
+        "lr": 0.0001,
+        "weight_decay": 0.0005,
+        "batch_size": 32
+      },
+      "method": "distill",
+      "source": {
+        "train_acc": 93.92265193370166,
+        "val_acc": 89.74358974358974,
+        "test_acc": 91.02564102564102
+      },
+      "target": {
+        "train_acc_before": 3.874538745387454,
+        "val_acc_before": 5.128205128205129,
+        "test_acc_before": 5.128205128205129,
+        "train_acc": 99.44649446494465,
+        "val_acc": 94.87179487179488,
+        "test_acc": 89.1025641025641,
+        "improvement": 83.97435897435898
+      },
+      "balance_score": 99.1025641025641,
+      "temperature": 2.0,
+      "distill_alpha": 0.3,
+      "mix_source_ratio": 0.3
+    }
+  },
+  "ideal_targets": {
+    "target_test_acc": "70-82%",
+    "source_test_acc_after_ft": "40-60%"
+  },
+  "improvements_from_v2": {
+    "fixed_freezing": "Correct parameter name matching",
+    "ewc_added": "Elastic Weight Consolidation for memory protection",
+    "distillation_added": "Knowledge distillation + LWF"
+  }
+}

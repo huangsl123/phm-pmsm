@@ -1,0 +1,21 @@
+# Local archives and files already marked for deletion
+_archive_experiments/
+_archive_old_versions/
+_pending_delete_confirmed/
+
+# Trained model weights are large; publish them separately with Git LFS/releases
+*.pth
+result_upgrade/models/
+
+# Python and editor caches
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Common temporary files
+*.tmp
+*.bak
+~$*
