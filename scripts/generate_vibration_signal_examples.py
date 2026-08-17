@@ -15,14 +15,14 @@ matplotlib.rcParams['axes.unicode_minus'] = False
 
 from _project_paths import DATASETS_DIR, PROJECT_ROOT
 
-from data.data_processor import load_csv_data
+from data.data_processor_v2 import load_csv_data
 
 # 加载真实数据
 print("Loading real vibration data...")
 BASE_DIR = str(DATASETS_DIR)
 data = load_csv_data(
     f"{BASE_DIR}/dataset2_3.0kW.csv",
-    window_size=1024, stride=128, spec_size=(128, 128),
+    window_size=1024, stride=128, spec_size=None,
     test_size=0.2, val_size=0.1, random_state=192
 )
 

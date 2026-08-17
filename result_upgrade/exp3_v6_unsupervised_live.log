@@ -1,0 +1,41 @@
+extract 1.0kW, window=8192
+extract 3.0kW, window=8192
+01_dann_0p05_seed42
+  source=76.67 target_diag=2.56
+01_dann_0p05_seed123
+  source=78.46 target_diag=7.95
+02_dann_0p1_seed42
+  source=76.67 target_diag=0.00
+02_dann_0p1_seed123
+  source=77.44 target_diag=2.31
+03_dann_0p2_seed42
+  source=75.64 target_diag=6.67
+03_dann_0p2_seed123
+  source=77.95 target_diag=0.51
+04_mmd_0p1_seed42
+  source=80.00 target_diag=5.13
+04_mmd_0p1_seed123
+  source=80.51 target_diag=5.90
+05_mmd_0p5_seed42
+  source=79.49 target_diag=5.64
+05_mmd_0p5_seed123
+  source=78.46 target_diag=4.87
+06_mmd_1p0_seed42
+  source=77.95 target_diag=6.15
+06_mmd_1p0_seed123
+  source=78.72 target_diag=5.13
+07_pseudo_0p7_seed42
+  source=79.74 target_diag=6.67
+07_pseudo_0p7_seed123
+  source=78.97 target_diag=6.67
+08_pseudo_0p8_seed42
+  source=78.97 target_diag=6.67
+08_pseudo_0p8_seed123
+  source=78.97 target_diag=6.67
+09_pseudo_0p9_seed42
+  source=79.23 target_diag=6.67
+09_pseudo_0p9_seed123
+  source=78.72 target_diag=6.67
+dann 84.05228758169935 1.6339869281045751
+mmd 84.50980392156862 3.7254901960784315
+pseudo 84.44444444444444 6.666666666666667

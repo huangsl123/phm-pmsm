@@ -22,7 +22,7 @@ from sklearn.metrics import confusion_matrix
 from _project_paths import DATASETS_DIR, PROJECT_ROOT, RESULTS_DIR
 
 from models.crossvit import CrossViTFaultDiagnosis
-from data.data_processor_128 import load_csv_data, MultiModalFaultDataset
+from data.data_processor_v2 import load_csv_data, MultiModalFaultDataset
 
 
 def plot_confusion_matrix(y_true, y_pred, class_names, title, save_path):
@@ -387,10 +387,10 @@ def run_exp2(source_power='1.0kW', target_power='3.0kW', base_path=str(DATASETS_
         os.path.join(base_path, f'dataset2_{source_power}.csv'),
         window_size=config['window_size'],
         stride=config['stride'],
-        spec_size=(128, 128),
+        spec_size=None,
         test_size=0.10,
         val_size=0.05,
-        split_mode='721'  # 7:2:1 分割
+        split_mode='time_blocked'  # time-blocked 70:20:10 split
     )
     print(f'Source: Train={len(source_data["y_train"])}, Val={len(source_data["y_val"])}, '
           f'Test={len(source_data["y_test"])}')
@@ -404,10 +404,10 @@ def run_exp2(source_power='1.0kW', target_power='3.0kW', base_path=str(DATASETS_
         os.path.join(base_path, f'dataset2_{target_power}.csv'),
         window_size=config['window_size'],
         stride=config['stride'],
-        spec_size=(128, 128),
+        spec_size=None,
         test_size=0.10,
         val_size=0.05,
-        split_mode='721'  # 7:2:1 分割
+        split_mode='time_blocked'  # time-blocked 70:20:10 split
     )
     print(f'Target: Train={len(target_data["y_train"])}, Val={len(target_data["y_val"])}, '
           f'Test={len(target_data["y_test"])}')

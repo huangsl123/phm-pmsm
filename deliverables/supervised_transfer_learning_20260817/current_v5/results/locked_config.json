@@ -1,0 +1,18 @@
+{
+  "config_index": 7,
+  "config": {
+    "window": 8192,
+    "hidden": 512,
+    "dropout": 0.2,
+    "adapt_lr": 0.0005,
+    "source_weight": 1.0,
+    "pretrain_lr": 0.0008,
+    "batch_size": 128,
+    "pretrain_epochs": 60,
+    "adapt_epochs": 100,
+    "smoothing": 0.05
+  },
+  "source_val_mean": 79.87179487179486,
+  "target_val_mean": 81.15384615384616,
+  "minimum_val_mean": 79.87179487179486
+}

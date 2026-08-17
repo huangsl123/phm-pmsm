@@ -1,0 +1,54 @@
+extract 1.0kW, window=8192
+extract 3.0kW, window=8192
+01_lwf_0p2_seed42
+  source=63.59 target=76.92
+01_lwf_0p2_seed123
+  source=55.64 target=76.92
+02_lwf_0p5_seed42
+  source=61.79 target=63.85
+02_lwf_0p5_seed123
+  source=64.62 target=63.08
+03_lwf_0p8_seed42
+  source=74.36 target=8.72
+03_lwf_0p8_seed123
+  source=65.38 target=14.36
+04_distill_0p2_seed42
+  source=81.79 target=80.26
+04_distill_0p2_seed123
+  source=80.51 target=78.46
+05_distill_0p5_seed42
+  source=80.77 target=79.23
+05_distill_0p5_seed123
+  source=81.28 target=78.72
+06_distill_1p0_seed42
+  source=80.77 target=79.74
+06_distill_1p0_seed123
+  source=80.77 target=78.21
+07_ewc_100p0_seed42
+  source=52.31 target=80.26
+07_ewc_100p0_seed123
+  source=54.62 target=49.49
+08_ewc_1000p0_seed42
+  source=66.41 target=80.51
+08_ewc_1000p0_seed123
+  source=55.90 target=77.18
+09_ewc_10000p0_seed42
+  source=72.82 target=80.26
+09_ewc_10000p0_seed123
+  source=70.77 target=78.21
+10_replay_0p25_seed42
+  source=81.28 target=79.49
+10_replay_0p25_seed123
+  source=79.49 target=79.23
+11_replay_0p5_seed42
+  source=81.28 target=80.26
+11_replay_0p5_seed123
+  source=80.26 target=78.72
+12_replay_1p0_seed42
+  source=80.26 target=80.51
+12_replay_1p0_seed123
+  source=79.23 target=78.72
+lwf 63.72549019607844 69.34640522875816
+distill 86.5359477124183 84.18300653594771
+ewc 72.54901960784314 83.52941176470588
+replay 84.83660130718954 84.90196078431373

@@ -1,0 +1,28 @@
+{
+  "runs": [
+    {
+      "seed": 42,
+      "source_test_accuracy": 62.48366013071895,
+      "target_test_accuracy": 7.8431372549019605,
+      "performance_drop": 54.64052287581699,
+      "model": "/home/eai/phm/phm-pmsm/result_upgrade/corrected_retrain_20260817_133431/models/exp1/exp1_seed42.pth"
+    },
+    {
+      "seed": 43,
+      "source_test_accuracy": 63.39869281045751,
+      "target_test_accuracy": 10.980392156862745,
+      "performance_drop": 52.41830065359477,
+      "model": "/home/eai/phm/phm-pmsm/result_upgrade/corrected_retrain_20260817_133431/models/exp1/exp1_seed43.pth"
+    },
+    {
+      "seed": 44,
+      "source_test_accuracy": 61.1764705882353,
+      "target_test_accuracy": 7.973856209150326,
+      "performance_drop": 53.20261437908497,
+      "model": "/home/eai/phm/phm-pmsm/result_upgrade/corrected_retrain_20260817_133431/models/exp1/exp1_seed44.pth"
+    }
+  ],
+  "source_test_mean": 62.35294117647059,
+  "target_test_mean": 8.932461873638344,
+  "target_test_std": 1.449088378938204
+}

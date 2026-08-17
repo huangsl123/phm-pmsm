@@ -1,0 +1,1119 @@
+Run directory: /home/eai/phm/phm-pmsm/result_upgrade/corrected_retrain_20260817_133431
+Device: cuda
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+  Training source model (max_epochs=100)...
+    Epoch 20/100 | Train: 100.0% | Val: 60.8% | Best: 63.1%
+    Epoch 40/100 | Train: 100.0% | Val: 61.3% | Best: 63.8%
+  Source training complete: Val=63.85% (Epoch: 52)
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+  Training source model (max_epochs=100)...
+    Epoch 20/100 | Train: 100.0% | Val: 63.3% | Best: 63.1%
+    Epoch 40/100 | Train: 100.0% | Val: 61.0% | Best: 63.8%
+  Source training complete: Val=63.85% (Epoch: 41)
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+  Training source model (max_epochs=100)...
+    Epoch 20/100 | Train: 100.0% | Val: 59.7% | Best: 62.8%
+  Source training complete: Val=62.82% (Epoch: 29)
+
+========================================================================================
+EXP3_V1: 5 configurations x 3 seeds
+========================================================================================
+[exp3_v1] config 1/5, seed=42: Baseline (embed_dim=384)
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+    target epoch 10/100: val=49.74, best=53.08
+    target epoch 20/100: val=49.23, best=55.38
+    target epoch 30/100: val=52.05, best=55.90
+    target epoch 40/100: val=54.87, best=57.18
+    target epoch 50/100: val=53.85, best=57.18
+[exp3_v1] config 1/5, seed=43: Baseline (embed_dim=384)
+    target epoch 10/100: val=38.46, best=50.00
+    target epoch 20/100: val=50.77, best=51.79
+    target epoch 30/100: val=46.92, best=51.79
+    target epoch 40/100: val=51.03, best=52.56
+    target epoch 50/100: val=51.03, best=52.56
+[exp3_v1] config 1/5, seed=44: Baseline (embed_dim=384)
+    target epoch 10/100: val=53.85, best=53.85
+    target epoch 20/100: val=46.15, best=53.85
+    target epoch 30/100: val=53.33, best=55.90
+    target epoch 40/100: val=55.13, best=55.90
+[exp3_v1] config 2/5, seed=42: Larger Model (embed_dim=512)
+  Training source model (max_epochs=100)...
+    Epoch 20/100 | Train: 100.0% | Val: 60.0% | Best: 63.8%
+  Source training complete: Val=63.85% (Epoch: 26)
+    target epoch 10/100: val=50.00, best=52.05
+    target epoch 20/100: val=50.26, best=53.59
+    target epoch 30/100: val=50.51, best=53.85
+    target epoch 40/100: val=50.26, best=55.13
+    target epoch 50/100: val=53.85, best=55.13
+[exp3_v1] config 2/5, seed=43: Larger Model (embed_dim=512)
+  Training source model (max_epochs=100)...
+    Epoch 20/100 | Train: 100.0% | Val: 60.5% | Best: 63.3%
+  Source training complete: Val=63.33% (Epoch: 30)
+    target epoch 10/100: val=48.97, best=56.15
+    target epoch 20/100: val=55.64, best=56.15
+[exp3_v1] config 2/5, seed=44: Larger Model (embed_dim=512)
+  Training source model (max_epochs=100)...
+    Epoch 20/100 | Train: 100.0% | Val: 62.1% | Best: 63.3%
+  Source training complete: Val=63.33% (Epoch: 32)
+    target epoch 10/100: val=52.82, best=55.64
+    target epoch 20/100: val=55.13, best=56.67
+    target epoch 30/100: val=53.85, best=56.67
+    target epoch 40/100: val=55.64, best=56.92
+    target epoch 50/100: val=54.62, best=56.92
+[exp3_v1] config 3/5, seed=42: Larger Model + Lower Dropout
+  Training source model (max_epochs=100)...
+    Epoch 20/100 | Train: 100.0% | Val: 62.1% | Best: 63.3%
+  Source training complete: Val=63.33% (Epoch: 31)
+    target epoch 10/100: val=53.85, best=58.21
+    target epoch 20/100: val=55.13, best=58.97
+    target epoch 30/100: val=56.15, best=60.26
+    target epoch 40/100: val=52.31, best=60.26
+[exp3_v1] config 3/5, seed=43: Larger Model + Lower Dropout
+  Training source model (max_epochs=100)...
+    Epoch 20/100 | Train: 100.0% | Val: 60.0% | Best: 62.6%
+  Source training complete: Val=62.56% (Epoch: 24)
+    target epoch 10/100: val=44.87, best=54.36
+    target epoch 20/100: val=53.33, best=55.64
+    target epoch 30/100: val=56.67, best=56.67
+    target epoch 40/100: val=53.85, best=58.72
+    target epoch 50/100: val=55.90, best=58.72
+[exp3_v1] config 3/5, seed=44: Larger Model + Lower Dropout
+  Training source model (max_epochs=100)...
+    Epoch 20/100 | Train: 100.0% | Val: 62.8% | Best: 63.8%
+  Source training complete: Val=63.85% (Epoch: 39)
+    target epoch 10/100: val=55.38, best=55.38
+    target epoch 20/100: val=50.51, best=55.38
+    target epoch 30/100: val=53.08, best=56.67
+    target epoch 40/100: val=53.85, best=56.92
+    target epoch 50/100: val=55.90, best=58.46
+    target epoch 60/100: val=54.10, best=58.46
+[exp3_v1] config 4/5, seed=42: Larger Model + Higher FT LR
+    target epoch 10/100: val=46.41, best=49.49
+    target epoch 20/100: val=23.85, best=49.49
+    target epoch 30/100: val=55.13, best=55.13
+    target epoch 40/100: val=46.15, best=55.13
+[exp3_v1] config 4/5, seed=43: Larger Model + Higher FT LR
+    target epoch 10/100: val=52.31, best=59.74
+    target epoch 20/100: val=44.36, best=59.74
+[exp3_v1] config 4/5, seed=44: Larger Model + Higher FT LR
+    target epoch 10/100: val=52.05, best=52.05
+    target epoch 20/100: val=38.21, best=55.64
+    target epoch 30/100: val=49.49, best=57.69
+    target epoch 40/100: val=51.79, best=57.69
+[exp3_v1] config 5/5, seed=42: Largest Model (embed_dim=768)
+  Training source model (max_epochs=100)...
+    Epoch 20/100 | Train: 100.0% | Val: 57.9% | Best: 62.8%
+  Source training complete: Val=62.82% (Epoch: 35)
+    target epoch 10/100: val=47.44, best=50.00
+    target epoch 20/100: val=50.51, best=51.54
+    target epoch 30/100: val=45.64, best=53.33
+    target epoch 40/100: val=49.74, best=53.59
+    target epoch 50/100: val=43.33, best=53.59
+[exp3_v1] config 5/5, seed=43: Largest Model (embed_dim=768)
+  Training source model (max_epochs=100)...
+    Epoch 20/100 | Train: 100.0% | Val: 59.7% | Best: 61.8%
+  Source training complete: Val=61.79% (Epoch: 32)
+    target epoch 10/100: val=46.92, best=50.00
+    target epoch 20/100: val=46.92, best=54.10
+    target epoch 30/100: val=52.05, best=54.10
+[exp3_v1] config 5/5, seed=44: Largest Model (embed_dim=768)
+  Training source model (max_epochs=100)...
+    Epoch 20/100 | Train: 99.9% | Val: 56.2% | Best: 60.0%
+  Source training complete: Val=60.00% (Epoch: 24)
+    target epoch 10/100: val=52.56, best=56.67
+    target epoch 20/100: val=46.41, best=56.67
+[exp3_v1] locked by validation: Larger Model + Higher FT LR
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+
+========================================================================================
+EXP3_V2: 8 configurations x 3 seeds
+========================================================================================
+[exp3_v2] config 1/8, seed=42: Baseline (384, no freeze)
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+    target epoch 10/100: val=49.23, best=53.59
+    target epoch 20/100: val=50.26, best=55.13
+    target epoch 30/100: val=55.64, best=55.64
+    target epoch 40/100: val=58.46, best=58.46
+    target epoch 50/100: val=52.05, best=58.46
+    target epoch 60/100: val=56.41, best=58.46
+[exp3_v2] config 1/8, seed=43: Baseline (384, no freeze)
+    target epoch 10/100: val=38.72, best=50.51
+    target epoch 20/100: val=49.23, best=52.31
+    target epoch 30/100: val=45.13, best=52.31
+[exp3_v2] config 1/8, seed=44: Baseline (384, no freeze)
+    target epoch 10/100: val=53.33, best=53.59
+    target epoch 20/100: val=43.85, best=53.59
+    target epoch 30/100: val=51.03, best=56.92
+    target epoch 40/100: val=51.54, best=56.92
+[exp3_v2] config 2/8, seed=42: Freeze Backbone (384)
+  Freezing backbone (all except classifier)...
+  Froze 86 parameters (backbone freeze)
+    target epoch 10/100: val=41.28, best=41.28
+    target epoch 20/100: val=42.31, best=45.13
+    target epoch 30/100: val=46.67, best=46.67
+    target epoch 40/100: val=45.38, best=46.67
+    target epoch 50/100: val=48.21, best=48.21
+    target epoch 60/100: val=45.13, best=48.21
+    target epoch 70/100: val=44.10, best=48.21
+[exp3_v2] config 2/8, seed=43: Freeze Backbone (384)
+  Freezing backbone (all except classifier)...
+  Froze 86 parameters (backbone freeze)
+    target epoch 10/100: val=36.41, best=36.41
+    target epoch 20/100: val=40.77, best=42.56
+    target epoch 30/100: val=41.28, best=44.10
+    target epoch 40/100: val=43.85, best=44.36
+    target epoch 50/100: val=44.10, best=45.13
+    target epoch 60/100: val=45.64, best=45.64
+    target epoch 70/100: val=43.85, best=45.64
+    target epoch 80/100: val=44.36, best=45.64
+[exp3_v2] config 2/8, seed=44: Freeze Backbone (384)
+  Freezing backbone (all except classifier)...
+  Froze 86 parameters (backbone freeze)
+    target epoch 10/100: val=38.97, best=38.97
+    target epoch 20/100: val=43.33, best=43.33
+    target epoch 30/100: val=44.10, best=44.10
+    target epoch 40/100: val=43.85, best=46.92
+    target epoch 50/100: val=45.90, best=46.92
+[exp3_v2] config 3/8, seed=42: Low FT LR (384, lr=1e-5)
+    target epoch 10/100: val=42.31, best=42.31
+    target epoch 20/100: val=50.00, best=50.00
+    target epoch 30/100: val=50.26, best=51.54
+    target epoch 40/100: val=48.72, best=51.54
+[exp3_v2] config 3/8, seed=43: Low FT LR (384, lr=1e-5)
+    target epoch 10/100: val=33.33, best=33.33
+    target epoch 20/100: val=38.72, best=38.97
+    target epoch 30/100: val=42.82, best=43.85
+    target epoch 40/100: val=45.38, best=46.67
+    target epoch 50/100: val=44.87, best=48.46
+    target epoch 60/100: val=46.67, best=48.97
+    target epoch 70/100: val=48.46, best=48.97
+[exp3_v2] config 3/8, seed=44: Low FT LR (384, lr=1e-5)
+    target epoch 10/100: val=38.46, best=38.46
+    target epoch 20/100: val=47.95, best=47.95
+    target epoch 30/100: val=49.49, best=49.49
+    target epoch 40/100: val=48.72, best=52.05
+    target epoch 50/100: val=51.54, best=52.05
+[exp3_v2] config 4/8, seed=42: Partial Freeze + Low LR (384)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+    target epoch 10/100: val=52.31, best=52.31
+    target epoch 20/100: val=50.26, best=52.82
+    target epoch 30/100: val=48.72, best=52.82
+[exp3_v2] config 4/8, seed=43: Partial Freeze + Low LR (384)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+    target epoch 10/100: val=40.51, best=47.95
+    target epoch 20/100: val=47.18, best=50.00
+    target epoch 30/100: val=46.41, best=50.51
+    target epoch 40/100: val=47.95, best=51.28
+    target epoch 50/100: val=45.90, best=51.28
+[exp3_v2] config 4/8, seed=44: Partial Freeze + Low LR (384)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+    target epoch 10/100: val=48.72, best=51.03
+    target epoch 20/100: val=47.69, best=53.85
+    target epoch 30/100: val=50.51, best=55.13
+    target epoch 40/100: val=52.31, best=55.13
+[exp3_v2] config 5/8, seed=42: Medium Model (512, no freeze)
+    target epoch 10/100: val=50.00, best=51.28
+    target epoch 20/100: val=46.15, best=52.82
+    target epoch 30/100: val=48.72, best=53.85
+    target epoch 40/100: val=52.31, best=56.15
+    target epoch 50/100: val=47.18, best=56.15
+[exp3_v2] config 5/8, seed=43: Medium Model (512, no freeze)
+    target epoch 10/100: val=49.74, best=56.67
+    target epoch 20/100: val=52.56, best=56.67
+[exp3_v2] config 5/8, seed=44: Medium Model (512, no freeze)
+    target epoch 10/100: val=53.08, best=55.38
+    target epoch 20/100: val=48.21, best=55.38
+    target epoch 30/100: val=55.38, best=56.15
+    target epoch 40/100: val=55.90, best=56.15
+[exp3_v2] config 6/8, seed=42: Medium Model + Freeze Backbone (512)
+  Freezing backbone (all except classifier)...
+  Froze 110 parameters (backbone freeze)
+    target epoch 10/100: val=35.38, best=38.46
+    target epoch 20/100: val=42.05, best=42.05
+    target epoch 30/100: val=42.82, best=43.33
+    target epoch 40/100: val=42.82, best=43.33
+    target epoch 50/100: val=43.85, best=44.62
+    target epoch 60/100: val=46.41, best=46.41
+    target epoch 70/100: val=44.87, best=46.67
+    target epoch 80/100: val=45.13, best=46.67
+    target epoch 90/100: val=47.44, best=47.95
+    target epoch 100/100: val=46.67, best=47.95
+[exp3_v2] config 6/8, seed=43: Medium Model + Freeze Backbone (512)
+  Freezing backbone (all except classifier)...
+  Froze 110 parameters (backbone freeze)
+    target epoch 10/100: val=37.18, best=37.18
+    target epoch 20/100: val=43.85, best=43.85
+    target epoch 30/100: val=40.77, best=44.62
+    target epoch 40/100: val=45.90, best=45.90
+    target epoch 50/100: val=46.67, best=46.67
+    target epoch 60/100: val=44.87, best=47.69
+    target epoch 70/100: val=45.64, best=48.21
+    target epoch 80/100: val=46.41, best=48.72
+    target epoch 90/100: val=46.67, best=48.97
+    target epoch 100/100: val=46.67, best=49.74
+[exp3_v2] config 6/8, seed=44: Medium Model + Freeze Backbone (512)
+  Freezing backbone (all except classifier)...
+  Froze 110 parameters (backbone freeze)
+    target epoch 10/100: val=40.26, best=40.26
+    target epoch 20/100: val=44.62, best=44.62
+    target epoch 30/100: val=44.10, best=44.87
+    target epoch 40/100: val=45.13, best=46.67
+    target epoch 50/100: val=46.15, best=46.92
+    target epoch 60/100: val=44.36, best=47.44
+    target epoch 70/100: val=47.95, best=47.95
+    target epoch 80/100: val=47.18, best=47.95
+    target epoch 90/100: val=47.69, best=48.46
+    target epoch 100/100: val=46.67, best=48.46
+[exp3_v2] config 7/8, seed=42: Medium Model + Low Dropout (512)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+    target epoch 10/100: val=52.05, best=52.31
+    target epoch 20/100: val=51.28, best=54.62
+    target epoch 30/100: val=52.56, best=54.62
+    target epoch 40/100: val=56.67, best=56.67
+    target epoch 50/100: val=52.05, best=56.67
+    target epoch 60/100: val=50.26, best=56.67
+[exp3_v2] config 7/8, seed=43: Medium Model + Low Dropout (512)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+    target epoch 10/100: val=45.38, best=54.10
+    target epoch 20/100: val=52.56, best=54.10
+[exp3_v2] config 7/8, seed=44: Medium Model + Low Dropout (512)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+    target epoch 10/100: val=52.31, best=53.33
+    target epoch 20/100: val=51.03, best=54.10
+    target epoch 30/100: val=53.59, best=54.87
+    target epoch 40/100: val=53.33, best=54.87
+[exp3_v2] config 8/8, seed=42: Large Model (768, partial freeze)
+  Freezing first 2 encoder layers...
+  Froze 48 parameter groups (layer freeze)
+    target epoch 10/100: val=50.51, best=50.51
+    target epoch 20/100: val=51.54, best=51.79
+    target epoch 30/100: val=49.23, best=52.82
+    target epoch 40/100: val=54.87, best=54.87
+    target epoch 50/100: val=49.74, best=54.87
+    target epoch 60/100: val=47.95, best=54.87
+[exp3_v2] config 8/8, seed=43: Large Model (768, partial freeze)
+  Freezing first 2 encoder layers...
+  Froze 48 parameter groups (layer freeze)
+    target epoch 10/100: val=44.87, best=50.26
+    target epoch 20/100: val=45.90, best=50.77
+    target epoch 30/100: val=47.44, best=51.54
+    target epoch 40/100: val=48.97, best=51.54
+[exp3_v2] config 8/8, seed=44: Large Model (768, partial freeze)
+  Freezing first 2 encoder layers...
+  Froze 48 parameter groups (layer freeze)
+    target epoch 10/100: val=52.82, best=52.82
+    target epoch 20/100: val=42.82, best=53.59
+    target epoch 30/100: val=51.54, best=53.85
+    target epoch 40/100: val=50.26, best=53.85
+    target epoch 50/100: val=51.79, best=54.62
+    target epoch 60/100: val=55.90, best=55.90
+    target epoch 70/100: val=53.08, best=55.90
+    target epoch 80/100: val=48.46, best=55.90
+[exp3_v2] locked by validation: Partial Freeze + Low LR (384)
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+
+========================================================================================
+EXP3_V3: 12 configurations x 3 seeds
+========================================================================================
+[exp3_v3] config 1/12, seed=42: V3-Baseline (384, no freeze)
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+    target epoch 10/100: val=48.97, best=54.10
+    target epoch 20/100: val=53.85, best=55.90
+    target epoch 30/100: val=52.05, best=56.41
+    target epoch 40/100: val=58.97, best=58.97
+    target epoch 50/100: val=50.77, best=58.97
+    target epoch 60/100: val=53.85, best=58.97
+[exp3_v3] config 1/12, seed=43: V3-Baseline (384, no freeze)
+    target epoch 10/100: val=40.00, best=51.28
+    target epoch 20/100: val=50.51, best=51.28
+    target epoch 30/100: val=48.72, best=51.54
+    target epoch 40/100: val=48.21, best=54.36
+    target epoch 50/100: val=49.74, best=54.36
+[exp3_v3] config 1/12, seed=44: V3-Baseline (384, no freeze)
+    target epoch 10/100: val=55.13, best=55.13
+    target epoch 20/100: val=41.54, best=55.13
+    target epoch 30/100: val=54.87, best=55.38
+    target epoch 40/100: val=56.67, best=57.18
+    target epoch 50/100: val=52.31, best=57.18
+[exp3_v3] config 2/12, seed=42: Fixed Freeze (384, first layer)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+    target epoch 10/100: val=49.49, best=52.82
+    target epoch 20/100: val=50.51, best=52.82
+    target epoch 30/100: val=45.64, best=53.33
+    target epoch 40/100: val=48.72, best=53.33
+[exp3_v3] config 2/12, seed=43: Fixed Freeze (384, first layer)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+    target epoch 10/100: val=44.87, best=51.03
+    target epoch 20/100: val=49.74, best=51.03
+    target epoch 30/100: val=45.13, best=54.10
+    target epoch 40/100: val=50.00, best=54.10
+[exp3_v3] config 2/12, seed=44: Fixed Freeze (384, first layer)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+    target epoch 10/100: val=48.97, best=53.08
+    target epoch 20/100: val=43.85, best=55.13
+    target epoch 30/100: val=50.26, best=55.13
+    target epoch 40/100: val=52.56, best=56.41
+    target epoch 50/100: val=56.92, best=56.92
+    target epoch 60/100: val=53.08, best=56.92
+    target epoch 70/100: val=52.05, best=56.92
+[exp3_v3] config 3/12, seed=42: Fixed Freeze + Embed (384)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+  Freezing embedding layers...
+  Froze additional embedding parameters
+    target epoch 10/100: val=53.33, best=53.33
+    target epoch 20/100: val=52.31, best=57.44
+    target epoch 30/100: val=53.33, best=57.44
+[exp3_v3] config 3/12, seed=43: Fixed Freeze + Embed (384)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+  Freezing embedding layers...
+  Froze additional embedding parameters
+    target epoch 10/100: val=48.97, best=52.31
+    target epoch 20/100: val=50.51, best=52.82
+    target epoch 30/100: val=48.97, best=54.10
+    target epoch 40/100: val=48.21, best=54.10
+[exp3_v3] config 3/12, seed=44: Fixed Freeze + Embed (384)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+  Freezing embedding layers...
+  Froze additional embedding parameters
+    target epoch 10/100: val=49.49, best=49.74
+    target epoch 20/100: val=54.36, best=54.36
+    target epoch 30/100: val=51.28, best=54.87
+    target epoch 40/100: val=52.56, best=54.87
+[exp3_v3] config 4/12, seed=42: EWC (384, lambda=100)
+  Trainable parameters: 8.88M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=100, lr=0.0001)...
+    Epoch 10/100 | Train: 72.7% | Val: 52.3% | Best: 49.2%
+    Epoch 20/100 | Train: 85.9% | Val: 50.8% | Best: 55.1%
+    Epoch 30/100 | Train: 90.6% | Val: 51.8% | Best: 55.9%
+    Epoch 40/100 | Train: 92.8% | Val: 51.5% | Best: 55.9%
+    Early stopping at epoch 47
+  Target fine-tuning complete: Val=55.90% (Epoch: 47)
+[exp3_v3] config 4/12, seed=43: EWC (384, lambda=100)
+  Trainable parameters: 8.88M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=100, lr=0.0001)...
+    Epoch 10/100 | Train: 76.2% | Val: 46.2% | Best: 50.0%
+    Epoch 20/100 | Train: 87.5% | Val: 42.3% | Best: 54.9%
+    Epoch 30/100 | Train: 91.5% | Val: 53.1% | Best: 54.9%
+    Early stopping at epoch 39
+  Target fine-tuning complete: Val=54.87% (Epoch: 39)
+[exp3_v3] config 4/12, seed=44: EWC (384, lambda=100)
+  Trainable parameters: 8.88M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=100, lr=0.0001)...
+    Epoch 10/100 | Train: 79.9% | Val: 51.8% | Best: 51.0%
+    Epoch 20/100 | Train: 89.5% | Val: 54.6% | Best: 54.9%
+    Epoch 30/100 | Train: 94.3% | Val: 49.7% | Best: 54.9%
+    Early stopping at epoch 31
+  Target fine-tuning complete: Val=54.87% (Epoch: 31)
+[exp3_v3] config 5/12, seed=42: EWC (384, lambda=500)
+  Trainable parameters: 8.88M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=500, lr=0.0001)...
+    Epoch 10/100 | Train: 66.3% | Val: 52.1% | Best: 49.5%
+    Epoch 20/100 | Train: 75.6% | Val: 52.8% | Best: 56.7%
+    Epoch 30/100 | Train: 78.8% | Val: 50.3% | Best: 56.7%
+    Epoch 40/100 | Train: 82.0% | Val: 48.5% | Best: 57.7%
+    Epoch 50/100 | Train: 84.3% | Val: 50.8% | Best: 57.7%
+    Early stopping at epoch 54
+  Target fine-tuning complete: Val=57.69% (Epoch: 54)
+[exp3_v3] config 5/12, seed=43: EWC (384, lambda=500)
+  Trainable parameters: 8.88M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=500, lr=0.0001)...
+    Epoch 10/100 | Train: 69.9% | Val: 40.0% | Best: 51.3%
+    Epoch 20/100 | Train: 77.9% | Val: 40.8% | Best: 53.1%
+    Epoch 30/100 | Train: 81.5% | Val: 54.1% | Best: 53.8%
+    Epoch 40/100 | Train: 84.2% | Val: 49.2% | Best: 54.4%
+    Epoch 50/100 | Train: 87.0% | Val: 49.7% | Best: 54.4%
+    Early stopping at epoch 51
+  Target fine-tuning complete: Val=54.36% (Epoch: 51)
+[exp3_v3] config 5/12, seed=44: EWC (384, lambda=500)
+  Trainable parameters: 8.88M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=500, lr=0.0001)...
+    Epoch 10/100 | Train: 73.8% | Val: 50.0% | Best: 49.0%
+    Epoch 20/100 | Train: 80.6% | Val: 50.3% | Best: 53.6%
+    Epoch 30/100 | Train: 85.6% | Val: 48.7% | Best: 53.6%
+    Early stopping at epoch 31
+  Target fine-tuning complete: Val=53.59% (Epoch: 31)
+[exp3_v3] config 6/12, seed=42: EWC (384, lambda=1000)
+  Trainable parameters: 8.88M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=1000, lr=0.0001)...
+    Epoch 10/100 | Train: 62.9% | Val: 50.3% | Best: 48.2%
+    Epoch 20/100 | Train: 71.7% | Val: 52.8% | Best: 54.1%
+    Epoch 30/100 | Train: 75.2% | Val: 47.9% | Best: 55.1%
+    Epoch 40/100 | Train: 77.4% | Val: 48.5% | Best: 55.1%
+    Early stopping at epoch 47
+  Target fine-tuning complete: Val=55.13% (Epoch: 47)
+[exp3_v3] config 6/12, seed=43: EWC (384, lambda=1000)
+  Trainable parameters: 8.88M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=1000, lr=0.0001)...
+    Epoch 10/100 | Train: 65.9% | Val: 37.7% | Best: 47.9%
+    Epoch 20/100 | Train: 74.2% | Val: 42.1% | Best: 51.3%
+    Epoch 30/100 | Train: 76.7% | Val: 55.4% | Best: 53.6%
+    Epoch 40/100 | Train: 79.2% | Val: 50.3% | Best: 55.4%
+    Epoch 50/100 | Train: 6.7% | Val: 6.7% | Best: 55.4%
+    Early stopping at epoch 50
+  Target fine-tuning complete: Val=55.38% (Epoch: 50)
+[exp3_v3] config 6/12, seed=44: EWC (384, lambda=1000)
+  Trainable parameters: 8.88M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=1000, lr=0.0001)...
+    Epoch 10/100 | Train: 69.9% | Val: 49.5% | Best: 46.9%
+    Epoch 20/100 | Train: 77.0% | Val: 48.7% | Best: 52.8%
+    Epoch 30/100 | Train: 80.5% | Val: 50.5% | Best: 54.4%
+    Epoch 40/100 | Train: 83.3% | Val: 46.7% | Best: 54.4%
+    Early stopping at epoch 49
+  Target fine-tuning complete: Val=54.36% (Epoch: 49)
+[exp3_v3] config 7/12, seed=42: EWC + Freeze (384, lambda=500)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+  Trainable parameters: 5.33M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=500, lr=0.0001)...
+    Epoch 10/100 | Train: 65.4% | Val: 47.9% | Best: 50.8%
+    Epoch 20/100 | Train: 74.0% | Val: 53.3% | Best: 56.2%
+    Epoch 30/100 | Train: 78.7% | Val: 49.2% | Best: 57.9%
+    Epoch 40/100 | Train: 83.0% | Val: 50.0% | Best: 57.9%
+    Early stopping at epoch 42
+  Target fine-tuning complete: Val=57.95% (Epoch: 42)
+[exp3_v3] config 7/12, seed=43: EWC + Freeze (384, lambda=500)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+  Trainable parameters: 5.33M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=500, lr=0.0001)...
+    Epoch 10/100 | Train: 66.6% | Val: 48.7% | Best: 48.7%
+    Epoch 20/100 | Train: 74.5% | Val: 44.4% | Best: 53.6%
+    Epoch 30/100 | Train: 80.0% | Val: 51.5% | Best: 55.1%
+    Epoch 40/100 | Train: 82.2% | Val: 48.7% | Best: 55.1%
+    Early stopping at epoch 49
+  Target fine-tuning complete: Val=55.13% (Epoch: 49)
+[exp3_v3] config 7/12, seed=44: EWC + Freeze (384, lambda=500)
+  Freezing first 1 encoder layers...
+  Froze 24 parameter groups (layer freeze)
+  Trainable parameters: 5.33M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=500, lr=0.0001)...
+    Epoch 10/100 | Train: 70.6% | Val: 49.2% | Best: 47.2%
+    Epoch 20/100 | Train: 78.3% | Val: 50.3% | Best: 53.8%
+    Epoch 30/100 | Train: 83.3% | Val: 51.3% | Best: 54.1%
+    Epoch 40/100 | Train: 86.3% | Val: 47.9% | Best: 55.6%
+    Epoch 50/100 | Train: 86.9% | Val: 48.5% | Best: 55.6%
+    Early stopping at epoch 51
+  Target fine-tuning complete: Val=55.64% (Epoch: 51)
+[exp3_v3] config 8/12, seed=42: Distill+LWF (384, T=2, alpha=0.3)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=2.0, alpha=0.3, source_ratio=0.3)...
+    Epoch 10/100 | Train: 90.7% | Val: 47.9% | Best: 49.5%
+    Epoch 20/100 | Train: 98.5% | Val: 49.0% | Best: 49.5%
+    Early stopping at epoch 27
+  Target fine-tuning complete: Val=49.49% (Epoch: 27)
+[exp3_v3] config 8/12, seed=43: Distill+LWF (384, T=2, alpha=0.3)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=2.0, alpha=0.3, source_ratio=0.3)...
+    Epoch 10/100 | Train: 90.7% | Val: 43.1% | Best: 42.3%
+    Epoch 20/100 | Train: 98.3% | Val: 41.8% | Best: 46.2%
+    Epoch 30/100 | Train: 99.3% | Val: 36.7% | Best: 46.2%
+    Early stopping at epoch 33
+  Target fine-tuning complete: Val=46.15% (Epoch: 33)
+[exp3_v3] config 8/12, seed=44: Distill+LWF (384, T=2, alpha=0.3)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=2.0, alpha=0.3, source_ratio=0.3)...
+    Epoch 10/100 | Train: 93.5% | Val: 51.3% | Best: 50.8%
+    Epoch 20/100 | Train: 99.2% | Val: 45.4% | Best: 51.3%
+    Epoch 30/100 | Train: 99.5% | Val: 44.9% | Best: 51.3%
+    Early stopping at epoch 30
+  Target fine-tuning complete: Val=51.28% (Epoch: 30)
+[exp3_v3] config 9/12, seed=42: Distill+LWF (384, T=3, alpha=0.5)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=3.0, alpha=0.5, source_ratio=0.3)...
+    Epoch 10/100 | Train: 79.8% | Val: 42.8% | Best: 40.5%
+    Epoch 20/100 | Train: 93.6% | Val: 41.5% | Best: 42.8%
+    Epoch 30/100 | Train: 94.9% | Val: 37.7% | Best: 42.8%
+    Early stopping at epoch 30
+  Target fine-tuning complete: Val=42.82% (Epoch: 30)
+[exp3_v3] config 9/12, seed=43: Distill+LWF (384, T=3, alpha=0.5)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=3.0, alpha=0.5, source_ratio=0.3)...
+    Epoch 10/100 | Train: 80.1% | Val: 38.7% | Best: 32.3%
+    Epoch 20/100 | Train: 93.2% | Val: 33.8% | Best: 38.7%
+    Epoch 30/100 | Train: 94.8% | Val: 32.1% | Best: 38.7%
+    Early stopping at epoch 30
+  Target fine-tuning complete: Val=38.72% (Epoch: 30)
+[exp3_v3] config 9/12, seed=44: Distill+LWF (384, T=3, alpha=0.5)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=3.0, alpha=0.5, source_ratio=0.3)...
+    Epoch 10/100 | Train: 83.7% | Val: 41.3% | Best: 39.7%
+    Epoch 20/100 | Train: 95.0% | Val: 39.5% | Best: 44.9%
+    Epoch 30/100 | Train: 96.3% | Val: 32.1% | Best: 44.9%
+    Early stopping at epoch 32
+  Target fine-tuning complete: Val=44.87% (Epoch: 32)
+[exp3_v3] config 10/12, seed=42: Distill+LWF (384, T=4, alpha=0.7)
+  Trainable parameters: 8.88M
+  Mixed dataset: 1342 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=4.0, alpha=0.7, source_ratio=0.5)...
+    Epoch 10/100 | Train: 64.6% | Val: 24.9% | Best: 29.0%
+    Epoch 20/100 | Train: 72.5% | Val: 30.3% | Best: 32.8%
+    Epoch 30/100 | Train: 74.5% | Val: 27.2% | Best: 32.8%
+    Early stopping at epoch 31
+  Target fine-tuning complete: Val=32.82% (Epoch: 31)
+[exp3_v3] config 10/12, seed=43: Distill+LWF (384, T=4, alpha=0.7)
+  Trainable parameters: 8.88M
+  Mixed dataset: 1342 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=4.0, alpha=0.7, source_ratio=0.5)...
+    Epoch 10/100 | Train: 61.3% | Val: 22.8% | Best: 24.1%
+    Epoch 20/100 | Train: 69.8% | Val: 19.2% | Best: 25.6%
+    Epoch 30/100 | Train: 72.6% | Val: 23.1% | Best: 25.6%
+    Early stopping at epoch 39
+  Target fine-tuning complete: Val=25.64% (Epoch: 39)
+[exp3_v3] config 10/12, seed=44: Distill+LWF (384, T=4, alpha=0.7)
+  Trainable parameters: 8.88M
+  Mixed dataset: 1342 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=4.0, alpha=0.7, source_ratio=0.5)...
+    Epoch 10/100 | Train: 59.0% | Val: 24.4% | Best: 22.6%
+    Epoch 20/100 | Train: 68.3% | Val: 23.8% | Best: 26.4%
+    Epoch 30/100 | Train: 72.4% | Val: 25.9% | Best: 27.2%
+    Epoch 40/100 | Train: 73.4% | Val: 23.8% | Best: 27.2%
+    Epoch 50/100 | Train: 74.3% | Val: 22.6% | Best: 27.7%
+    Epoch 60/100 | Train: 73.8% | Val: 22.6% | Best: 27.7%
+    Early stopping at epoch 61
+  Target fine-tuning complete: Val=27.69% (Epoch: 61)
+[exp3_v3] config 11/12, seed=42: Medium + EWC (512, lambda=500)
+  Trainable parameters: 22.01M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=500, lr=0.0001)...
+    Epoch 10/100 | Train: 81.0% | Val: 50.3% | Best: 52.3%
+    Epoch 20/100 | Train: 90.6% | Val: 53.1% | Best: 56.2%
+    Epoch 30/100 | Train: 95.8% | Val: 52.6% | Best: 56.7%
+    Epoch 40/100 | Train: 96.5% | Val: 47.4% | Best: 56.7%
+    Early stopping at epoch 42
+  Target fine-tuning complete: Val=56.67% (Epoch: 42)
+[exp3_v3] config 11/12, seed=43: Medium + EWC (512, lambda=500)
+  Trainable parameters: 22.01M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=500, lr=0.0001)...
+    Epoch 10/100 | Train: 77.4% | Val: 51.5% | Best: 54.9%
+    Epoch 20/100 | Train: 88.3% | Val: 47.7% | Best: 57.4%
+    Epoch 30/100 | Train: 93.8% | Val: 55.9% | Best: 57.4%
+    Early stopping at epoch 38
+  Target fine-tuning complete: Val=57.44% (Epoch: 38)
+[exp3_v3] config 11/12, seed=44: Medium + EWC (512, lambda=500)
+  Trainable parameters: 22.01M
+  Computing initial Fisher matrix...
+  Fine-tuning with EWC (lambda=500, lr=0.0001)...
+    Epoch 10/100 | Train: 77.3% | Val: 55.6% | Best: 52.8%
+    Epoch 20/100 | Train: 88.5% | Val: 53.8% | Best: 55.6%
+    Epoch 30/100 | Train: 91.1% | Val: 49.7% | Best: 55.6%
+    Early stopping at epoch 30
+  Target fine-tuning complete: Val=55.64% (Epoch: 30)
+[exp3_v3] config 12/12, seed=42: Medium + Distill (512, T=3)
+  Trainable parameters: 22.01M
+  Mixed dataset: 1074 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=3.0, alpha=0.5, source_ratio=0.4)...
+    Epoch 10/100 | Train: 86.2% | Val: 36.7% | Best: 36.4%
+    Epoch 20/100 | Train: 94.7% | Val: 34.4% | Best: 40.0%
+    Epoch 30/100 | Train: 95.9% | Val: 32.6% | Best: 40.0%
+    Early stopping at epoch 36
+  Target fine-tuning complete: Val=40.00% (Epoch: 36)
+[exp3_v3] config 12/12, seed=43: Medium + Distill (512, T=3)
+  Trainable parameters: 22.01M
+  Mixed dataset: 1074 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=3.0, alpha=0.5, source_ratio=0.4)...
+    Epoch 10/100 | Train: 89.7% | Val: 43.8% | Best: 43.6%
+    Epoch 20/100 | Train: 97.2% | Val: 37.7% | Best: 43.8%
+    Epoch 30/100 | Train: 97.6% | Val: 37.2% | Best: 43.8%
+    Early stopping at epoch 30
+  Target fine-tuning complete: Val=43.85% (Epoch: 30)
+[exp3_v3] config 12/12, seed=44: Medium + Distill (512, T=3)
+  Trainable parameters: 22.01M
+  Mixed dataset: 1074 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=3.0, alpha=0.5, source_ratio=0.4)...
+    Epoch 10/100 | Train: 86.0% | Val: 36.2% | Best: 38.5%
+    Epoch 20/100 | Train: 93.3% | Val: 33.1% | Best: 39.7%
+    Epoch 30/100 | Train: 95.1% | Val: 38.2% | Best: 39.7%
+    Early stopping at epoch 34
+  Target fine-tuning complete: Val=39.74% (Epoch: 34)
+[exp3_v3] locked by validation: Distill+LWF (384, T=2, alpha=0.3)
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+
+========================================================================================
+EXP3_V4: 16 configurations x 3 seeds
+========================================================================================
+[exp3_v4] config 1/16, seed=42: V3-Best Distill (T=2, alpha=0.3)
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=2.0, alpha=0.3, source_ratio=0.3)...
+    Epoch 10/100 | Train: 91.0% | Val: 48.7% | Best: 50.0%
+    Epoch 20/100 | Train: 98.9% | Val: 49.2% | Best: 50.0%
+    Early stopping at epoch 27
+  Target fine-tuning complete: Val=50.00% (Epoch: 27)
+[exp3_v4] config 1/16, seed=43: V3-Best Distill (T=2, alpha=0.3)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=2.0, alpha=0.3, source_ratio=0.3)...
+    Epoch 10/100 | Train: 90.5% | Val: 42.6% | Best: 43.3%
+    Epoch 20/100 | Train: 98.2% | Val: 42.3% | Best: 45.1%
+    Epoch 30/100 | Train: 99.3% | Val: 35.9% | Best: 45.1%
+    Early stopping at epoch 33
+  Target fine-tuning complete: Val=45.13% (Epoch: 33)
+[exp3_v4] config 1/16, seed=44: V3-Best Distill (T=2, alpha=0.3)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=2.0, alpha=0.3, source_ratio=0.3)...
+    Epoch 10/100 | Train: 93.6% | Val: 51.0% | Best: 50.3%
+    Epoch 20/100 | Train: 99.2% | Val: 45.6% | Best: 51.0%
+    Epoch 30/100 | Train: 99.7% | Val: 44.9% | Best: 51.0%
+    Early stopping at epoch 30
+  Target fine-tuning complete: Val=51.03% (Epoch: 30)
+[exp3_v4] config 2/16, seed=42: Distill (T=1.5, alpha=0.25)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=1.5, alpha=0.25, source_ratio=0.3)...
+    Epoch 10/100 | Train: 92.1% | Val: 49.2% | Best: 52.1%
+    Epoch 20/100 | Train: 99.2% | Val: 48.5% | Best: 52.1%
+    Early stopping at epoch 29
+  Target fine-tuning complete: Val=52.05% (Epoch: 29)
+[exp3_v4] config 2/16, seed=43: Distill (T=1.5, alpha=0.25)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=1.5, alpha=0.25, source_ratio=0.3)...
+    Epoch 10/100 | Train: 91.9% | Val: 45.1% | Best: 43.8%
+    Epoch 20/100 | Train: 98.5% | Val: 42.8% | Best: 47.9%
+    Epoch 30/100 | Train: 99.5% | Val: 37.7% | Best: 47.9%
+    Early stopping at epoch 32
+  Target fine-tuning complete: Val=47.95% (Epoch: 32)
+[exp3_v4] config 2/16, seed=44: Distill (T=1.5, alpha=0.25)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=1.5, alpha=0.25, source_ratio=0.3)...
+    Epoch 10/100 | Train: 93.9% | Val: 52.1% | Best: 51.3%
+    Epoch 20/100 | Train: 99.5% | Val: 44.1% | Best: 52.1%
+    Epoch 30/100 | Train: 99.6% | Val: 46.9% | Best: 52.1%
+    Early stopping at epoch 30
+  Target fine-tuning complete: Val=52.05% (Epoch: 30)
+[exp3_v4] config 3/16, seed=42: Distill (T=1.8, alpha=0.3)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=1.8, alpha=0.3, source_ratio=0.3)...
+    Epoch 10/100 | Train: 90.6% | Val: 49.5% | Best: 49.5%
+    Epoch 20/100 | Train: 98.6% | Val: 49.5% | Best: 49.7%
+    Epoch 30/100 | Train: 99.1% | Val: 41.3% | Best: 49.7%
+    Early stopping at epoch 32
+  Target fine-tuning complete: Val=49.74% (Epoch: 32)
+[exp3_v4] config 3/16, seed=43: Distill (T=1.8, alpha=0.3)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=1.8, alpha=0.3, source_ratio=0.3)...
+    Epoch 10/100 | Train: 90.0% | Val: 42.8% | Best: 41.0%
+    Epoch 20/100 | Train: 98.1% | Val: 39.7% | Best: 44.1%
+    Epoch 30/100 | Train: 99.2% | Val: 36.2% | Best: 44.1%
+    Early stopping at epoch 32
+  Target fine-tuning complete: Val=44.10% (Epoch: 32)
+[exp3_v4] config 3/16, seed=44: Distill (T=1.8, alpha=0.3)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=1.8, alpha=0.3, source_ratio=0.3)...
+    Epoch 10/100 | Train: 93.4% | Val: 50.3% | Best: 50.8%
+    Epoch 20/100 | Train: 99.2% | Val: 43.8% | Best: 50.8%
+    Early stopping at epoch 26
+  Target fine-tuning complete: Val=50.77% (Epoch: 26)
+[exp3_v4] config 4/16, seed=42: Distill (T=2.2, alpha=0.35)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=2.2, alpha=0.35, source_ratio=0.3)...
+    Epoch 10/100 | Train: 89.1% | Val: 49.5% | Best: 48.2%
+    Epoch 20/100 | Train: 97.7% | Val: 48.2% | Best: 49.5%
+    Epoch 30/100 | Train: 98.9% | Val: 44.4% | Best: 49.5%
+    Early stopping at epoch 30
+  Target fine-tuning complete: Val=49.49% (Epoch: 30)
+[exp3_v4] config 4/16, seed=43: Distill (T=2.2, alpha=0.35)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=2.2, alpha=0.35, source_ratio=0.3)...
+    Epoch 10/100 | Train: 88.7% | Val: 41.8% | Best: 41.5%
+    Epoch 20/100 | Train: 97.7% | Val: 38.5% | Best: 42.6%
+    Epoch 30/100 | Train: 98.7% | Val: 35.9% | Best: 42.6%
+    Early stopping at epoch 37
+  Target fine-tuning complete: Val=42.56% (Epoch: 37)
+[exp3_v4] config 4/16, seed=44: Distill (T=2.2, alpha=0.35)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=2.2, alpha=0.35, source_ratio=0.3)...
+    Epoch 10/100 | Train: 92.0% | Val: 49.7% | Best: 47.7%
+    Epoch 20/100 | Train: 98.6% | Val: 44.1% | Best: 49.7%
+    Epoch 30/100 | Train: 99.4% | Val: 43.3% | Best: 49.7%
+    Early stopping at epoch 30
+  Target fine-tuning complete: Val=49.74% (Epoch: 30)
+[exp3_v4] config 5/16, seed=42: Distill (T=2.5, alpha=0.4)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=2.5, alpha=0.4, source_ratio=0.3)...
+    Epoch 10/100 | Train: 86.6% | Val: 45.4% | Best: 46.9%
+    Epoch 20/100 | Train: 96.8% | Val: 48.2% | Best: 46.9%
+    Epoch 30/100 | Train: 98.0% | Val: 40.3% | Best: 48.2%
+    Epoch 40/100 | Train: 98.5% | Val: 40.5% | Best: 48.2%
+    Early stopping at epoch 40
+  Target fine-tuning complete: Val=48.21% (Epoch: 40)
+[exp3_v4] config 5/16, seed=43: Distill (T=2.5, alpha=0.4)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=2.5, alpha=0.4, source_ratio=0.3)...
+    Epoch 10/100 | Train: 86.7% | Val: 40.0% | Best: 37.2%
+    Epoch 20/100 | Train: 96.9% | Val: 37.2% | Best: 42.3%
+    Epoch 30/100 | Train: 98.1% | Val: 35.1% | Best: 42.3%
+    Early stopping at epoch 37
+  Target fine-tuning complete: Val=42.31% (Epoch: 37)
+[exp3_v4] config 5/16, seed=44: Distill (T=2.5, alpha=0.4)
+  Trainable parameters: 8.88M
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation+LWF (T=2.5, alpha=0.4, source_ratio=0.3)...
+    Epoch 10/100 | Train: 90.2% | Val: 46.9% | Best: 45.6%
+    Epoch 20/100 | Train: 98.3% | Val: 43.8% | Best: 47.7%
+    Epoch 30/100 | Train: 99.1% | Val: 41.5% | Best: 47.7%
+    Early stopping at epoch 32
+  Target fine-tuning complete: Val=47.69% (Epoch: 32)
+[exp3_v4] config 6/16, seed=42: DANN (lambda=0.05)
+  Fine-tuning with DANN (lambda=0.05, lr=0.0001)...
+    Epoch 10/100 | Train: 92.6% | Val: 51.5% | Best: 53.6%
+    Epoch 20/100 | Train: 99.7% | Val: 50.0% | Best: 54.1%
+    Epoch 30/100 | Train: 99.9% | Val: 52.1% | Best: 54.4%
+    Epoch 40/100 | Train: 100.0% | Val: 52.8% | Best: 55.1%
+    Epoch 50/100 | Train: 100.0% | Val: 52.3% | Best: 55.4%
+    Epoch 60/100 | Train: 100.0% | Val: 50.5% | Best: 55.4%
+    Early stopping at epoch 68
+  Target fine-tuning complete: Val=55.38%
+[exp3_v4] config 6/16, seed=43: DANN (lambda=0.05)
+  Fine-tuning with DANN (lambda=0.05, lr=0.0001)...
+    Epoch 10/100 | Train: 91.7% | Val: 43.3% | Best: 50.0%
+    Epoch 20/100 | Train: 99.5% | Val: 46.7% | Best: 50.0%
+    Early stopping at epoch 27
+  Target fine-tuning complete: Val=50.00%
+[exp3_v4] config 6/16, seed=44: DANN (lambda=0.05)
+  Fine-tuning with DANN (lambda=0.05, lr=0.0001)...
+    Epoch 10/100 | Train: 95.9% | Val: 44.4% | Best: 50.0%
+    Epoch 20/100 | Train: 99.8% | Val: 53.3% | Best: 56.9%
+    Epoch 30/100 | Train: 100.0% | Val: 51.0% | Best: 56.9%
+    Early stopping at epoch 39
+  Target fine-tuning complete: Val=56.92%
+[exp3_v4] config 7/16, seed=42: DANN (lambda=0.1)
+  Fine-tuning with DANN (lambda=0.1, lr=0.0001)...
+    Epoch 10/100 | Train: 92.8% | Val: 52.3% | Best: 52.8%
+    Epoch 20/100 | Train: 99.8% | Val: 51.3% | Best: 53.1%
+    Epoch 30/100 | Train: 100.0% | Val: 52.1% | Best: 54.1%
+    Epoch 40/100 | Train: 100.0% | Val: 53.1% | Best: 54.1%
+    Early stopping at epoch 49
+  Target fine-tuning complete: Val=54.10%
+[exp3_v4] config 7/16, seed=43: DANN (lambda=0.1)
+  Fine-tuning with DANN (lambda=0.1, lr=0.0001)...
+    Epoch 10/100 | Train: 92.0% | Val: 43.8% | Best: 48.7%
+    Epoch 20/100 | Train: 99.5% | Val: 47.2% | Best: 50.0%
+    Epoch 30/100 | Train: 100.0% | Val: 44.9% | Best: 50.0%
+    Early stopping at epoch 39
+  Target fine-tuning complete: Val=50.00%
+[exp3_v4] config 7/16, seed=44: DANN (lambda=0.1)
+  Fine-tuning with DANN (lambda=0.1, lr=0.0001)...
+    Epoch 10/100 | Train: 95.6% | Val: 44.1% | Best: 49.5%
+    Epoch 20/100 | Train: 99.7% | Val: 52.6% | Best: 54.4%
+    Epoch 30/100 | Train: 100.0% | Val: 50.5% | Best: 55.1%
+    Epoch 40/100 | Train: 100.0% | Val: 51.3% | Best: 55.1%
+    Early stopping at epoch 41
+  Target fine-tuning complete: Val=55.13%
+[exp3_v4] config 8/16, seed=42: DANN (lambda=0.2)
+  Fine-tuning with DANN (lambda=0.2, lr=0.0001)...
+    Epoch 10/100 | Train: 92.8% | Val: 51.3% | Best: 52.8%
+    Epoch 20/100 | Train: 99.8% | Val: 50.3% | Best: 54.1%
+    Epoch 30/100 | Train: 100.0% | Val: 48.7% | Best: 54.1%
+    Epoch 40/100 | Train: 100.0% | Val: 50.3% | Best: 55.4%
+    Epoch 50/100 | Train: 100.0% | Val: 51.0% | Best: 55.4%
+    Early stopping at epoch 52
+  Target fine-tuning complete: Val=55.38%
+[exp3_v4] config 8/16, seed=43: DANN (lambda=0.2)
+  Fine-tuning with DANN (lambda=0.2, lr=0.0001)...
+    Epoch 10/100 | Train: 91.3% | Val: 43.1% | Best: 50.0%
+    Epoch 20/100 | Train: 99.6% | Val: 49.5% | Best: 50.0%
+    Early stopping at epoch 27
+  Target fine-tuning complete: Val=50.00%
+[exp3_v4] config 8/16, seed=44: DANN (lambda=0.2)
+  Fine-tuning with DANN (lambda=0.2, lr=0.0001)...
+    Epoch 10/100 | Train: 95.7% | Val: 44.1% | Best: 51.0%
+    Epoch 20/100 | Train: 99.7% | Val: 50.3% | Best: 55.9%
+    Epoch 30/100 | Train: 100.0% | Val: 52.3% | Best: 55.9%
+    Early stopping at epoch 38
+  Target fine-tuning complete: Val=55.90%
+[exp3_v4] config 9/16, seed=42: Medium + DANN (512, lambda=0.1)
+  Fine-tuning with DANN (lambda=0.1, lr=0.0001)...
+    Epoch 10/100 | Train: 96.6% | Val: 51.0% | Best: 53.1%
+    Epoch 20/100 | Train: 99.5% | Val: 49.0% | Best: 53.1%
+    Epoch 30/100 | Train: 99.9% | Val: 52.3% | Best: 53.3%
+    Epoch 40/100 | Train: 100.0% | Val: 44.4% | Best: 53.3%
+    Early stopping at epoch 42
+  Target fine-tuning complete: Val=53.33%
+[exp3_v4] config 9/16, seed=43: Medium + DANN (512, lambda=0.1)
+  Fine-tuning with DANN (lambda=0.1, lr=0.0001)...
+    Epoch 10/100 | Train: 97.6% | Val: 49.5% | Best: 55.4%
+    Epoch 20/100 | Train: 100.0% | Val: 53.8% | Best: 55.4%
+    Early stopping at epoch 29
+  Target fine-tuning complete: Val=55.38%
+[exp3_v4] config 9/16, seed=44: Medium + DANN (512, lambda=0.1)
+  Fine-tuning with DANN (lambda=0.1, lr=0.0001)...
+    Epoch 10/100 | Train: 97.4% | Val: 53.1% | Best: 52.8%
+    Epoch 20/100 | Train: 99.9% | Val: 55.9% | Best: 55.1%
+    Epoch 30/100 | Train: 100.0% | Val: 52.6% | Best: 55.9%
+    Epoch 40/100 | Train: 100.0% | Val: 51.5% | Best: 55.9%
+    Early stopping at epoch 40
+  Target fine-tuning complete: Val=55.90%
+[exp3_v4] config 10/16, seed=42: MMD (lambda=0.05)
+  Fine-tuning with MMD (lambda=0.05, lr=0.0001)...
+    Epoch 10/100 | Train: 93.6% | Val: 50.0% | Best: 53.1%
+    Epoch 20/100 | Train: 99.7% | Val: 52.6% | Best: 53.1%
+    Epoch 30/100 | Train: 99.9% | Val: 53.6% | Best: 55.1%
+    Epoch 40/100 | Train: 100.0% | Val: 50.8% | Best: 57.9%
+    Epoch 50/100 | Train: 100.0% | Val: 52.3% | Best: 57.9%
+    Early stopping at epoch 59
+  Target fine-tuning complete: Val=57.95%
+[exp3_v4] config 10/16, seed=43: MMD (lambda=0.05)
+  Fine-tuning with MMD (lambda=0.05, lr=0.0001)...
+    Epoch 10/100 | Train: 92.3% | Val: 42.1% | Best: 50.8%
+    Epoch 20/100 | Train: 99.8% | Val: 49.2% | Best: 50.8%
+    Epoch 30/100 | Train: 99.9% | Val: 51.0% | Best: 52.8%
+    Epoch 40/100 | Train: 100.0% | Val: 45.4% | Best: 52.8%
+    Early stopping at epoch 48
+  Target fine-tuning complete: Val=52.82%
+[exp3_v4] config 10/16, seed=44: MMD (lambda=0.05)
+  Fine-tuning with MMD (lambda=0.05, lr=0.0001)...
+    Epoch 10/100 | Train: 96.5% | Val: 46.2% | Best: 51.5%
+    Epoch 20/100 | Train: 99.8% | Val: 49.7% | Best: 56.2%
+    Epoch 30/100 | Train: 100.0% | Val: 52.1% | Best: 56.2%
+    Early stopping at epoch 39
+  Target fine-tuning complete: Val=56.15%
+[exp3_v4] config 11/16, seed=42: MMD (lambda=0.1)
+  Fine-tuning with MMD (lambda=0.1, lr=0.0001)...
+    Epoch 10/100 | Train: 94.0% | Val: 48.7% | Best: 52.3%
+    Epoch 20/100 | Train: 99.9% | Val: 46.9% | Best: 53.8%
+    Epoch 30/100 | Train: 100.0% | Val: 49.7% | Best: 54.1%
+    Epoch 40/100 | Train: 100.0% | Val: 54.9% | Best: 56.7%
+    Epoch 50/100 | Train: 100.0% | Val: 49.5% | Best: 56.9%
+    Epoch 60/100 | Train: 100.0% | Val: 54.1% | Best: 56.9%
+    Early stopping at epoch 64
+  Target fine-tuning complete: Val=56.92%
+[exp3_v4] config 11/16, seed=43: MMD (lambda=0.1)
+  Fine-tuning with MMD (lambda=0.1, lr=0.0001)...
+    Epoch 10/100 | Train: 92.3% | Val: 40.8% | Best: 52.1%
+    Epoch 20/100 | Train: 99.7% | Val: 52.3% | Best: 52.1%
+    Epoch 30/100 | Train: 99.9% | Val: 52.3% | Best: 54.4%
+    Epoch 40/100 | Train: 100.0% | Val: 47.4% | Best: 54.4%
+    Early stopping at epoch 46
+  Target fine-tuning complete: Val=54.36%
+[exp3_v4] config 11/16, seed=44: MMD (lambda=0.1)
+  Fine-tuning with MMD (lambda=0.1, lr=0.0001)...
+    Epoch 10/100 | Train: 96.1% | Val: 44.9% | Best: 52.8%
+    Epoch 20/100 | Train: 99.8% | Val: 47.7% | Best: 55.4%
+    Epoch 30/100 | Train: 100.0% | Val: 52.6% | Best: 56.2%
+    Epoch 40/100 | Train: 100.0% | Val: 54.9% | Best: 56.2%
+    Early stopping at epoch 44
+  Target fine-tuning complete: Val=56.15%
+[exp3_v4] config 12/16, seed=42: Pseudo (threshold=0.85)
+  Generated 641 pseudo labels (23.9% of data)
+  Average confidence: 0.616
+  Fine-tuning with Pseudo Labels (threshold=0.85, lr=0.0001)...
+    Epoch 10/100 | Train: 100.0% | Val: 8.2% | Best: 9.7%
+    Epoch 20/100 | Train: 100.0% | Val: 9.2% | Best: 11.3%
+    Epoch 30/100 | Train: 100.0% | Val: 8.7% | Best: 11.3%
+    Early stopping at epoch 35
+  Target fine-tuning complete: Val=11.28%
+[exp3_v4] config 12/16, seed=43: Pseudo (threshold=0.85)
+  Generated 747 pseudo labels (27.8% of data)
+  Average confidence: 0.647
+  Fine-tuning with Pseudo Labels (threshold=0.85, lr=0.0001)...
+    Epoch 10/100 | Train: 100.0% | Val: 11.5% | Best: 12.8%
+    Epoch 20/100 | Train: 100.0% | Val: 11.0% | Best: 12.8%
+    Early stopping at epoch 21
+  Target fine-tuning complete: Val=12.82%
+[exp3_v4] config 12/16, seed=44: Pseudo (threshold=0.85)
+  Generated 337 pseudo labels (12.6% of data)
+  Average confidence: 0.613
+  Fine-tuning with Pseudo Labels (threshold=0.85, lr=0.0001)...
+    Epoch 10/100 | Train: 100.0% | Val: 9.7% | Best: 11.3%
+    Epoch 20/100 | Train: 100.0% | Val: 11.0% | Best: 11.3%
+    Epoch 30/100 | Train: 100.0% | Val: 10.0% | Best: 11.5%
+    Epoch 40/100 | Train: 100.0% | Val: 11.3% | Best: 11.8%
+    Epoch 50/100 | Train: 100.0% | Val: 11.5% | Best: 12.3%
+    Epoch 60/100 | Train: 100.0% | Val: 9.5% | Best: 12.3%
+    Early stopping at epoch 65
+  Target fine-tuning complete: Val=12.31%
+[exp3_v4] config 13/16, seed=42: Pseudo (threshold=0.90)
+  Generated 531 pseudo labels (19.8% of data)
+  Average confidence: 0.616
+  Fine-tuning with Pseudo Labels (threshold=0.9, lr=0.0001)...
+    Epoch 10/100 | Train: 100.0% | Val: 11.3% | Best: 12.6%
+    Epoch 20/100 | Train: 100.0% | Val: 12.6% | Best: 12.6%
+    Early stopping at epoch 25
+  Target fine-tuning complete: Val=12.56%
+[exp3_v4] config 13/16, seed=43: Pseudo (threshold=0.90)
+  Generated 537 pseudo labels (20.0% of data)
+  Average confidence: 0.647
+  Fine-tuning with Pseudo Labels (threshold=0.9, lr=0.0001)...
+    Epoch 10/100 | Train: 100.0% | Val: 9.5% | Best: 14.4%
+    Epoch 20/100 | Train: 100.0% | Val: 13.6% | Best: 14.4%
+    Early stopping at epoch 27
+  Target fine-tuning complete: Val=14.36%
+[exp3_v4] config 13/16, seed=44: Pseudo (threshold=0.90)
+  Generated 194 pseudo labels (7.2% of data)
+  Average confidence: 0.613
+  Fine-tuning with Pseudo Labels (threshold=0.9, lr=0.0001)...
+    Epoch 10/100 | Train: 100.0% | Val: 11.8% | Best: 12.3%
+    Epoch 20/100 | Train: 100.0% | Val: 12.3% | Best: 12.8%
+    Epoch 30/100 | Train: 100.0% | Val: 13.3% | Best: 12.8%
+    Epoch 40/100 | Train: 100.0% | Val: 11.0% | Best: 13.6%
+    Epoch 50/100 | Train: 100.0% | Val: 12.8% | Best: 13.6%
+    Early stopping at epoch 58
+  Target fine-tuning complete: Val=13.59%
+[exp3_v4] config 14/16, seed=42: Pseudo (threshold=0.95)
+  Generated 209 pseudo labels (7.8% of data)
+  Average confidence: 0.616
+  Fine-tuning with Pseudo Labels (threshold=0.95, lr=0.0001)...
+    Epoch 10/100 | Train: 99.9% | Val: 10.8% | Best: 14.1%
+    Epoch 20/100 | Train: 100.0% | Val: 10.3% | Best: 14.1%
+    Early stopping at epoch 29
+  Target fine-tuning complete: Val=14.10%
+[exp3_v4] config 14/16, seed=43: Pseudo (threshold=0.95)
+  Generated 217 pseudo labels (8.1% of data)
+  Average confidence: 0.647
+  Fine-tuning with Pseudo Labels (threshold=0.95, lr=0.0001)...
+    Epoch 10/100 | Train: 100.0% | Val: 11.3% | Best: 12.3%
+    Epoch 20/100 | Train: 100.0% | Val: 11.0% | Best: 12.3%
+    Epoch 30/100 | Train: 100.0% | Val: 11.3% | Best: 13.8%
+    Epoch 40/100 | Train: 100.0% | Val: 8.2% | Best: 13.8%
+    Early stopping at epoch 47
+  Target fine-tuning complete: Val=13.85%
+[exp3_v4] config 14/16, seed=44: Pseudo (threshold=0.95)
+  Generated 54 pseudo labels (2.0% of data)
+  Average confidence: 0.613
+  Fine-tuning with Pseudo Labels (threshold=0.95, lr=0.0001)...
+    Epoch 10/100 | Train: 100.0% | Val: 10.8% | Best: 11.0%
+    Epoch 20/100 | Train: 100.0% | Val: 11.3% | Best: 11.5%
+    Epoch 30/100 | Train: 100.0% | Val: 8.7% | Best: 11.5%
+    Epoch 40/100 | Train: 100.0% | Val: 9.7% | Best: 12.1%
+    Epoch 50/100 | Train: 100.0% | Val: 10.5% | Best: 12.1%
+    Early stopping at epoch 52
+  Target fine-tuning complete: Val=12.05%
+[exp3_v4] config 15/16, seed=42: Medium + Pseudo (512, threshold=0.90)
+  Generated 292 pseudo labels (10.9% of data)
+  Average confidence: 0.633
+  Fine-tuning with Pseudo Labels (threshold=0.9, lr=0.0001)...
+    Epoch 10/100 | Train: 99.9% | Val: 11.8% | Best: 12.3%
+    Epoch 20/100 | Train: 100.0% | Val: 11.5% | Best: 12.6%
+    Epoch 30/100 | Train: 100.0% | Val: 12.3% | Best: 13.1%
+    Epoch 40/100 | Train: 100.0% | Val: 13.1% | Best: 13.1%
+    Epoch 50/100 | Train: 100.0% | Val: 13.3% | Best: 13.3%
+    Epoch 60/100 | Train: 100.0% | Val: 13.3% | Best: 13.3%
+    Early stopping at epoch 62
+  Target fine-tuning complete: Val=13.33%
+[exp3_v4] config 15/16, seed=43: Medium + Pseudo (512, threshold=0.90)
+  Generated 196 pseudo labels (7.3% of data)
+  Average confidence: 0.617
+  Fine-tuning with Pseudo Labels (threshold=0.9, lr=0.0001)...
+    Epoch 10/100 | Train: 99.9% | Val: 10.3% | Best: 12.8%
+    Epoch 20/100 | Train: 100.0% | Val: 11.0% | Best: 13.3%
+    Epoch 30/100 | Train: 100.0% | Val: 10.0% | Best: 13.3%
+    Early stopping at epoch 31
+  Target fine-tuning complete: Val=13.33%
+[exp3_v4] config 15/16, seed=44: Medium + Pseudo (512, threshold=0.90)
+  Generated 649 pseudo labels (24.2% of data)
+  Average confidence: 0.673
+  Fine-tuning with Pseudo Labels (threshold=0.9, lr=0.0001)...
+    Epoch 10/100 | Train: 99.9% | Val: 12.8% | Best: 12.6%
+    Epoch 20/100 | Train: 100.0% | Val: 12.6% | Best: 12.8%
+    Epoch 30/100 | Train: 99.9% | Val: 10.8% | Best: 12.8%
+    Early stopping at epoch 30
+  Target fine-tuning complete: Val=12.82%
+[exp3_v4] config 16/16, seed=42: Distill + Pseudo
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation (T=2.0, alpha=0.3)...
+    Epoch 10/50 | Train: 90.8% | Val: 49.0% | Best: 50.3%
+    Epoch 20/50 | Train: 98.6% | Val: 49.7% | Best: 50.3%
+    Early stopping at epoch 27
+  Target fine-tuning complete: Val=50.26%
+  Generated 66 pseudo labels (2.5% of data)
+  Average confidence: 0.579
+  Fine-tuning with Pseudo Labels (threshold=0.9, lr=5e-05)...
+    Epoch 10/50 | Train: 100.0% | Val: 14.4% | Best: 33.8%
+    Epoch 20/50 | Train: 100.0% | Val: 13.3% | Best: 33.8%
+    Early stopping at epoch 21
+  Target fine-tuning complete: Val=33.85%
+[exp3_v4] config 16/16, seed=43: Distill + Pseudo
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation (T=2.0, alpha=0.3)...
+    Epoch 10/50 | Train: 90.7% | Val: 43.8% | Best: 43.3%
+    Epoch 20/50 | Train: 98.4% | Val: 42.1% | Best: 45.4%
+    Epoch 30/50 | Train: 99.3% | Val: 35.4% | Best: 45.4%
+    Early stopping at epoch 33
+  Target fine-tuning complete: Val=45.38%
+  Generated 193 pseudo labels (7.2% of data)
+  Average confidence: 0.714
+  Fine-tuning with Pseudo Labels (threshold=0.9, lr=5e-05)...
+    Epoch 10/50 | Train: 100.0% | Val: 18.7% | Best: 38.2%
+    Epoch 20/50 | Train: 100.0% | Val: 18.2% | Best: 38.2%
+    Early stopping at epoch 21
+  Target fine-tuning complete: Val=38.21%
+[exp3_v4] config 16/16, seed=44: Distill + Pseudo
+  Mixed dataset: 805 source + 2685 target samples
+  Fine-tuning with Distillation (T=2.0, alpha=0.3)...
+    Epoch 10/50 | Train: 93.4% | Val: 51.5% | Best: 50.3%
+    Epoch 20/50 | Train: 99.3% | Val: 44.6% | Best: 51.5%
+    Epoch 30/50 | Train: 99.5% | Val: 45.1% | Best: 51.5%
+    Early stopping at epoch 30
+  Target fine-tuning complete: Val=51.54%
+  Generated 147 pseudo labels (5.5% of data)
+  Average confidence: 0.711
+  Fine-tuning with Pseudo Labels (threshold=0.9, lr=5e-05)...
+    Epoch 10/50 | Train: 100.0% | Val: 23.8% | Best: 38.5%
+    Epoch 20/50 | Train: 100.0% | Val: 18.7% | Best: 38.5%
+    Early stopping at epoch 22
+  Target fine-tuning complete: Val=38.46%
+[exp3_v4] locked by validation: Distill (T=1.5, alpha=0.25)
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/eai/Tools/miniforge3/envs/bym50/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+Complete. Report: /home/eai/phm/phm-pmsm/result_upgrade/corrected_retrain_20260817_133431/EXP3_CORRECTED_EXPERIMENT_REPORT.md

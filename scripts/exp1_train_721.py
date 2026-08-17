@@ -35,7 +35,7 @@ from _project_paths import DATASETS_DIR, PROJECT_ROOT, RESULTS_DIR
 
 from models.crossvit import CrossViTFaultDiagnosis
 from modules.domain_adaptation import get_default_domain_adaptation_module
-from data.data_processor_128 import (
+from data.data_processor_v2 import (
     load_csv_data, load_cross_domain_data,
     create_domain_adapt_loaders, MultiModalFaultDataset,
     UnlabeledMultiModalDataset
@@ -347,15 +347,15 @@ def run_exp1_single_domain(power='1.0kW', base_path=None, num_epochs=50):
     print(f'Exp1: Single Domain Baseline - {power}')
     print('=' * 80)
 
-    # 加载数据 - 使用 7:2:1 分割
+    # 加载数据 - 使用原始时间块 70:20:10 分割（训练:测试:验证）
     data = load_csv_data(
         os.path.join(base_path, f'dataset2_{power}.csv'),
         window_size=1024,
         stride=128,
-        spec_size=(128, 128),
+        spec_size=None,
         test_size=0.10,
         val_size=0.05,
-        split_mode='721'  # 7:2:1 分割
+        split_mode='time_blocked'  # time-blocked 70:20:10 split
     )
 
     print(f'Dataset size: Train={len(data["y_train"])}, Val={len(data["y_val"])}, Test={len(data["y_test"])}')
@@ -491,26 +491,26 @@ def run_exp2_cross_domain(source_power='1.0kW', target_power='3.0kW',
     print(f'Source: {source_power}, Target: {target_power}')
     print('=' * 80)
 
-    # 加载源域数据 - 使用 7:2:1 分割
+    # 加载源域数据 - 使用原始时间块 70:20:10 分割（训练:测试:验证）
     source_data = load_csv_data(
         os.path.join(base_path, f'dataset2_{source_power}.csv'),
         window_size=1024,
         stride=128,
-        spec_size=(128, 128),
+        spec_size=None,
         test_size=0.10,
         val_size=0.05,
-        split_mode='721'  # 7:2:1 分割
+        split_mode='time_blocked'  # time-blocked 70:20:10 split
     )
 
-    # 加载目标域测试数据 - 使用 7:2:1 分割
+    # 加载目标域测试数据 - 使用原始时间块 70:20:10 分割（训练:测试:验证）
     target_data = load_csv_data(
         os.path.join(base_path, f'dataset2_{target_power}.csv'),
         window_size=1024,
         stride=128,
-        spec_size=(128, 128),
+        spec_size=None,
         test_size=0.10,
         val_size=0.05,
-        split_mode='721'  # 7:2:1 分割
+        split_mode='time_blocked'  # time-blocked 70:20:10 split
     )
 
     # 创建数据加载器
@@ -600,7 +600,7 @@ def run_exp3_domain_adaptation(source_power='1.0kW', target_power='3.0kW',
     # 加载跨域数据
     cross_data = load_cross_domain_data(
         source_power, target_power, base_path,
-        window_size=1024, stride=512, spec_size=(128, 128)
+        window_size=1024, stride=512, spec_size=None
     )
     loaders = create_domain_adapt_loaders(cross_data, batch_size=32, augment=True)
 

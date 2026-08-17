@@ -23,7 +23,7 @@ matplotlib.rcParams['axes.unicode_minus'] = False
 from _project_paths import DATASETS_DIR, RESULTS_DIR
 
 from models.crossvit import CrossViTFaultDiagnosis
-from data.data_processor import load_csv_data, MultiModalFaultDataset
+from data.data_processor_v2 import load_csv_data, MultiModalFaultDataset
 
 
 class AttentionTrackingTransformerEncoder(nn.Module):
@@ -248,13 +248,13 @@ def main():
     print("Loading data...")
     source_data = load_csv_data(
         str(DATASETS_DIR / "dataset2_1.0kW.csv"),
-        window_size=1024, stride=128, spec_size=(128, 128),
+        window_size=1024, stride=128, spec_size=None,
         test_size=0.2, val_size=0.1, random_state=192
     )
 
     target_data = load_csv_data(
         str(DATASETS_DIR / "dataset2_3.0kW.csv"),
-        window_size=1024, stride=128, spec_size=(128, 128),
+        window_size=1024, stride=128, spec_size=None,
         test_size=0.2, val_size=0.1, random_state=192
     )
 
@@ -263,21 +263,16 @@ def main():
     )
     test_loader = DataLoader(target_test_dataset, batch_size=1, shuffle=False)
 
-    fault_labels = ['Normal', 'IR007', 'IR014', 'IR021',
-                   'OR007', 'OR014', 'OR021',
-                   'B007', 'B014', 'B021',
-                   'IR028', 'OR028', 'B028',
-                   'IR040', 'OR040', 'B040']
-    class_names = fault_labels
+    class_names = [str(name) for name in source_data['class_names']]
 
     # Load model
     print(f"Loading model: {args.model}")
     base_model = CrossViTFaultDiagnosis(
         in_channels=source_data['n_channels'],
-        num_classes=16,
+        num_classes=source_data['n_classes'],
         time_seq_len=1024,
-        spec_height=128,
-        spec_width=128,
+        spec_height=source_data['spec_size'][0],
+        spec_width=source_data['spec_size'][1],
         embed_dim=384,
         num_heads=8,
         num_layers=2,

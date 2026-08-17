@@ -1,0 +1,133 @@
+extract 1.0kW, window=4096
+extract 3.0kW, window=4096
+[1/8 seed=42] 01_w4096_h256_d0p15_lr0p0005_replay0p5_seed42
+    epoch=10 source=74.87 target=73.33
+    epoch=20 source=73.59 target=74.62
+    epoch=30 source=75.38 target=76.15
+    epoch=40 source=76.15 target=74.10
+  val source=75.90 target=76.67
+[1/8 seed=123] 01_w4096_h256_d0p15_lr0p0005_replay0p5_seed123
+    epoch=10 source=76.41 target=69.23
+    epoch=20 source=76.15 target=72.31
+    epoch=30 source=74.62 target=72.05
+    epoch=40 source=76.67 target=72.31
+    epoch=50 source=76.15 target=72.05
+    epoch=60 source=76.15 target=73.08
+    epoch=70 source=76.41 target=73.85
+    epoch=80 source=76.41 target=73.08
+    epoch=90 source=76.15 target=72.82
+  val source=77.18 target=74.10
+[2/8 seed=42] 02_w4096_h256_d0p25_lr0p001_replay1p0_seed42
+    epoch=10 source=72.31 target=73.08
+    epoch=20 source=77.18 target=72.82
+    epoch=30 source=74.62 target=75.13
+    epoch=40 source=75.38 target=75.38
+  val source=77.44 target=76.41
+[2/8 seed=123] 02_w4096_h256_d0p25_lr0p001_replay1p0_seed123
+    epoch=10 source=76.15 target=70.51
+    epoch=20 source=75.64 target=70.26
+    epoch=30 source=77.18 target=75.13
+    epoch=40 source=77.44 target=73.08
+    epoch=50 source=76.67 target=74.10
+  val source=77.18 target=75.13
+[3/8 seed=42] 03_w4096_h512_d0p2_lr0p0005_replay1p0_seed42
+    epoch=10 source=77.18 target=74.10
+    epoch=20 source=76.41 target=76.67
+    epoch=30 source=79.23 target=78.21
+    epoch=40 source=78.72 target=76.92
+    epoch=50 source=79.74 target=77.44
+  val source=79.23 target=78.21
+[3/8 seed=123] 03_w4096_h512_d0p2_lr0p0005_replay1p0_seed123
+    epoch=10 source=78.72 target=71.54
+    epoch=20 source=78.46 target=70.00
+    epoch=30 source=80.00 target=74.62
+    epoch=40 source=80.00 target=74.87
+    epoch=50 source=79.23 target=75.13
+    epoch=60 source=80.00 target=74.62
+    epoch=70 source=80.00 target=75.13
+    epoch=80 source=80.00 target=74.36
+    epoch=90 source=80.00 target=74.36
+  val source=80.00 target=75.90
+[4/8 seed=42] 04_w4096_h512_d0p35_lr0p0003_replay2p0_seed42
+    epoch=10 source=77.95 target=71.79
+    epoch=20 source=78.72 target=75.38
+    epoch=30 source=77.69 target=75.64
+    epoch=40 source=77.69 target=76.92
+    epoch=50 source=77.44 target=76.92
+    epoch=60 source=78.46 target=77.18
+    epoch=70 source=77.69 target=76.41
+    epoch=80 source=77.44 target=76.41
+    epoch=90 source=77.95 target=76.92
+  val source=77.69 target=77.44
+[4/8 seed=123] 04_w4096_h512_d0p35_lr0p0003_replay2p0_seed123
+    epoch=10 source=79.23 target=69.23
+    epoch=20 source=77.95 target=71.54
+    epoch=30 source=79.74 target=71.79
+    epoch=40 source=80.00 target=73.08
+    epoch=50 source=78.97 target=73.08
+  val source=80.77 target=74.36
+extract 1.0kW, window=8192
+extract 3.0kW, window=8192
+[5/8 seed=42] 05_w8192_h256_d0p15_lr0p0005_replay0p5_seed42
+    epoch=10 source=75.13 target=78.46
+    epoch=20 source=74.87 target=78.72
+    epoch=30 source=76.92 target=80.00
+    epoch=40 source=78.72 target=79.49
+    epoch=50 source=76.41 target=78.97
+    epoch=60 source=76.67 target=81.03
+  val source=78.72 target=79.49
+[5/8 seed=123] 05_w8192_h256_d0p15_lr0p0005_replay0p5_seed123
+    epoch=10 source=76.67 target=72.56
+    epoch=20 source=78.46 target=75.90
+    epoch=30 source=77.95 target=77.18
+    epoch=40 source=76.67 target=78.21
+  val source=77.95 target=77.95
+[6/8 seed=42] 06_w8192_h256_d0p25_lr0p001_replay1p0_seed42
+    epoch=10 source=75.38 target=78.21
+    epoch=20 source=76.15 target=77.95
+    epoch=30 source=78.97 target=78.97
+    epoch=40 source=78.21 target=78.97
+    epoch=50 source=78.97 target=81.03
+    epoch=60 source=78.46 target=80.26
+    epoch=70 source=77.95 target=80.00
+  val source=79.74 target=81.28
+[6/8 seed=123] 06_w8192_h256_d0p25_lr0p001_replay1p0_seed123
+    epoch=10 source=74.36 target=74.87
+    epoch=20 source=77.44 target=77.95
+    epoch=30 source=75.13 target=80.51
+    epoch=40 source=76.92 target=78.46
+  val source=77.44 target=77.95
+[7/8 seed=42] 07_w8192_h512_d0p2_lr0p0005_replay1p0_seed42
+    epoch=10 source=77.69 target=78.21
+    epoch=20 source=78.21 target=79.74
+    epoch=30 source=78.97 target=81.28
+    epoch=40 source=78.46 target=80.51
+    epoch=50 source=78.46 target=82.05
+    epoch=60 source=79.23 target=81.28
+  val source=80.00 target=82.56
+[7/8 seed=123] 07_w8192_h512_d0p2_lr0p0005_replay1p0_seed123
+    epoch=10 source=77.95 target=77.18
+    epoch=20 source=78.46 target=77.44
+    epoch=30 source=77.18 target=78.46
+    epoch=40 source=78.72 target=77.69
+    epoch=50 source=79.23 target=80.26
+    epoch=60 source=78.97 target=80.00
+    epoch=70 source=78.97 target=79.74
+    epoch=80 source=79.23 target=79.49
+  val source=79.74 target=79.74
+[8/8 seed=42] 08_w8192_h512_d0p35_lr0p0003_replay2p0_seed42
+    epoch=10 source=77.95 target=78.21
+    epoch=20 source=78.46 target=80.51
+    epoch=30 source=80.00 target=80.77
+    epoch=40 source=80.00 target=80.26
+    epoch=50 source=78.21 target=79.23
+  val source=81.28 target=80.51
+[8/8 seed=123] 08_w8192_h512_d0p35_lr0p0003_replay2p0_seed123
+    epoch=10 source=76.92 target=74.62
+    epoch=20 source=78.21 target=75.38
+    epoch=30 source=77.95 target=76.67
+    epoch=40 source=78.72 target=77.44
+    epoch=50 source=78.97 target=78.46
+    epoch=60 source=78.72 target=78.72
+  val source=78.97 target=78.97
+LOCKED TEST source=85.29 target=86.14

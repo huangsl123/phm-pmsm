@@ -289,7 +289,7 @@ def load_csv_data(data_path: str, window_size: int = 1024, stride: int = 512,
     split_mode : str
         分割模式: 'legacy' (默认) 或 '721' (7:2:1分割)
         - 'legacy': 训练集=1-test_size-val_size, 验证集=val_size, 测试集=test_size
-        - '721': 训练集=70%, 验证集=10%, 测试集=20%
+        - '721': 训练集=70%, 测试集=20%, 验证集=10%
 
     Returns:
     --------

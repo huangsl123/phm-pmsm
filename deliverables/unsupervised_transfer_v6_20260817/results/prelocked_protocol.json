@@ -1,0 +1,8 @@
+{
+  "test_configs": {
+    "dann": 0.1,
+    "mmd": 0.5,
+    "pseudo": 0.8
+  },
+  "selection": "prelocked; target labels excluded from adaptation and selection"
+}

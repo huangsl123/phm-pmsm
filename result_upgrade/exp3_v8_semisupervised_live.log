@@ -1,0 +1,44 @@
+extract 1.0kW, window=8192
+extract 3.0kW, window=8192
+01_labeled_only_f0p05_tnone_seed42
+  labels=135/2685 source=77.69 target=55.64
+01_labeled_only_f0p05_tnone_seed123
+  labels=135/2685 source=79.74 target=47.18
+02_fixmatch_f0p05_t0p8_seed42
+  labels=135/2685 source=75.13 target=49.49
+02_fixmatch_f0p05_t0p8_seed123
+  labels=135/2685 source=74.62 target=40.51
+03_fixmatch_f0p05_t0p95_seed42
+  labels=135/2685 source=76.41 target=54.10
+03_fixmatch_f0p05_t0p95_seed123
+  labels=135/2685 source=74.62 target=47.95
+04_labeled_only_f0p1_tnone_seed42
+  labels=270/2685 source=80.00 target=62.82
+04_labeled_only_f0p1_tnone_seed123
+  labels=270/2685 source=79.74 target=60.26
+05_fixmatch_f0p1_t0p8_seed42
+  labels=270/2685 source=79.49 target=55.13
+05_fixmatch_f0p1_t0p8_seed123
+  labels=270/2685 source=76.67 target=50.26
+06_fixmatch_f0p1_t0p95_seed42
+  labels=270/2685 source=80.77 target=65.64
+06_fixmatch_f0p1_t0p95_seed123
+  labels=270/2685 source=77.44 target=63.33
+07_labeled_only_f0p2_tnone_seed42
+  labels=540/2685 source=77.69 target=69.49
+07_labeled_only_f0p2_tnone_seed123
+  labels=540/2685 source=77.95 target=68.97
+08_fixmatch_f0p2_t0p8_seed42
+  labels=540/2685 source=78.97 target=58.97
+08_fixmatch_f0p2_t0p8_seed123
+  labels=540/2685 source=70.77 target=58.72
+09_fixmatch_f0p2_t0p95_seed42
+  labels=540/2685 source=81.03 target=70.26
+09_fixmatch_f0p2_t0p95_seed123
+  labels=540/2685 source=78.97 target=69.23
+labeled_only 5% 83.72549019607843 55.55555555555556
+fixmatch 5% 81.76470588235293 52.02614379084967
+labeled_only 10% 84.37908496732027 62.74509803921569
+fixmatch 10% 84.640522875817 62.22222222222223
+labeled_only 20% 84.44444444444444 69.08496732026144
+fixmatch 20% 85.75163398692811 66.01307189542484

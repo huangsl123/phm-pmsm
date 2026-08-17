@@ -20,7 +20,7 @@ from sklearn.metrics import confusion_matrix, accuracy_score
 from _project_paths import PROJECT_ROOT
 
 from models.crossvit import CrossViTFaultDiagnosis
-from data.data_processor import load_csv_data, MultiModalFaultDataset
+from data.data_processor_v2 import load_csv_data, MultiModalFaultDataset
 
 
 # ============================================
@@ -485,7 +485,7 @@ def train_best_config(config_info, source_data_dir, target_data_dir,
         source_data_dir,
         window_size=1024,
         stride=256,      # 重要：使用256而不是512，产生394个样本
-        spec_size=(128, 128),
+        spec_size=None,
         test_size=0.10,
         val_size=0.05,
         random_state=42
@@ -494,7 +494,7 @@ def train_best_config(config_info, source_data_dir, target_data_dir,
         target_data_dir,
         window_size=1024,
         stride=256,      # 重要：使用256而不是512，产生394个样本
-        spec_size=(128, 128),
+        spec_size=None,
         test_size=0.10,
         val_size=0.05,
         random_state=42

@@ -1,0 +1,21 @@
+{
+  "runs": [
+    {
+      "seed": 42,
+      "test_accuracy": 62.48366013071895,
+      "model": "/home/eai/phm/phm-pmsm/result_upgrade/corrected_retrain_20260817_133431/models/exp1/exp1_seed42.pth"
+    },
+    {
+      "seed": 43,
+      "test_accuracy": 63.39869281045751,
+      "model": "/home/eai/phm/phm-pmsm/result_upgrade/corrected_retrain_20260817_133431/models/exp1/exp1_seed43.pth"
+    },
+    {
+      "seed": 44,
+      "test_accuracy": 61.1764705882353,
+      "model": "/home/eai/phm/phm-pmsm/result_upgrade/corrected_retrain_20260817_133431/models/exp1/exp1_seed44.pth"
+    }
+  ],
+  "test_mean": 62.35294117647059,
+  "test_std": 0.9119150124817549
+}

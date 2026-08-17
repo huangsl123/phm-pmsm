@@ -1,0 +1,52 @@
+{
+  "lwf": {
+    "config_index": 2,
+    "method": "lwf",
+    "parameter": 0.5,
+    "config": {
+      "method": "lwf",
+      "alpha": 0.5,
+      "temperature": 2.0
+    },
+    "source_val_mean": 63.205128205128204,
+    "target_val_mean": 63.46153846153847,
+    "minimum_val_mean": 62.43589743589744
+  },
+  "distill": {
+    "config_index": 4,
+    "method": "distill",
+    "parameter": 0.2,
+    "config": {
+      "method": "distill",
+      "weight": 0.2,
+      "temperature": 2.0
+    },
+    "source_val_mean": 81.15384615384616,
+    "target_val_mean": 79.35897435897436,
+    "minimum_val_mean": 79.35897435897436
+  },
+  "ewc": {
+    "config_index": 9,
+    "method": "ewc",
+    "parameter": 10000.0,
+    "config": {
+      "method": "ewc",
+      "lambda": 10000.0
+    },
+    "source_val_mean": 71.7948717948718,
+    "target_val_mean": 79.23076923076923,
+    "minimum_val_mean": 71.7948717948718
+  },
+  "replay": {
+    "config_index": 12,
+    "method": "replay",
+    "parameter": 1.0,
+    "config": {
+      "method": "replay",
+      "weight": 1.0
+    },
+    "source_val_mean": 79.74358974358975,
+    "target_val_mean": 79.61538461538461,
+    "minimum_val_mean": 79.48717948717949
+  }
+}

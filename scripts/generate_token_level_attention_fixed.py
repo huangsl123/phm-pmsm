@@ -28,7 +28,7 @@ plt.rcParams['figure.dpi'] = 150
 from _project_paths import DATASETS_DIR, RESULTS_DIR
 
 from models.crossvit import CrossViTFaultDiagnosis
-from data.data_processor import load_csv_data, MultiModalFaultDataset
+from data.data_processor_v2 import load_csv_data, MultiModalFaultDataset
 from torch.utils.data import DataLoader
 
 
@@ -344,13 +344,13 @@ def main():
 
     source_data = load_csv_data(
         f"{BASE_DIR}/dataset2_1.0kW.csv",
-        window_size=1024, stride=128, spec_size=(128, 128),
+        window_size=1024, stride=128, spec_size=None,
         test_size=0.2, val_size=0.1, random_state=192
     )
 
     target_data = load_csv_data(
         f"{BASE_DIR}/dataset2_3.0kW.csv",
-        window_size=1024, stride=128, spec_size=(128, 128),
+        window_size=1024, stride=128, spec_size=None,
         test_size=0.2, val_size=0.1, random_state=192
     )
 
@@ -359,7 +359,7 @@ def main():
     )
     test_loader = DataLoader(target_test_dataset, batch_size=1, shuffle=False)
 
-    # Class names - 使用源域的16类故障代码（模型训练时的类别）
+    # Class names use the corrected shared 15-class protocol.
     class_names = [str(c) for c in source_data['fault_codes']]
 
     # Load model
@@ -367,10 +367,10 @@ def main():
 
     base_model = CrossViTFaultDiagnosis(
         in_channels=source_data['n_channels'],
-        num_classes=16,
+        num_classes=source_data['n_classes'],
         time_seq_len=1024,
-        spec_height=128,
-        spec_width=128,
+        spec_height=source_data['spec_size'][0],
+        spec_width=source_data['spec_size'][1],
         embed_dim=384,
         num_heads=8,
         num_layers=2,

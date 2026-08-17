@@ -57,7 +57,7 @@ class MultiScalePatchEmbedding(nn.Module):
         self.convs = nn.ModuleList([
             nn.Sequential(
                 nn.Conv2d(in_channels, channels_per_scale,
-                         kernel_size=ps, stride=ps, padding=0),
+                         kernel_size=ps, stride=ps, padding=ps // 2),
                 nn.BatchNorm2d(channels_per_scale),
                 nn.ReLU(inplace=True)
             )
@@ -233,7 +233,7 @@ class CrossViTFaultDiagnosis(nn.Module):
     双分支：时域分支 + 频域分支
     """
 
-    def __init__(self, in_channels=3, num_classes=16,
+    def __init__(self, in_channels=3, num_classes=15,
                  time_seq_len=1024, spec_height=128, spec_width=128,
                  embed_dim=128, num_heads=8, num_layers=4,
                  mlp_ratio=4, dropout=0.1):
@@ -377,7 +377,7 @@ if __name__ == '__main__':
     time_seq_len = 1024
     spec_height, spec_width = 128, 128
     in_channels = 3
-    num_classes = 16
+    num_classes = 15
 
     # 创建测试数据
     time_x = torch.randn(batch_size, time_seq_len, in_channels)

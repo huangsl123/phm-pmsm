@@ -3,7 +3,7 @@
 Data processing module
 """
 
-from .data_processor import (
+from .data_processor_v2 import (
     MultiModalFaultDataset,
     UnlabeledMultiModalDataset,
     load_csv_data,
